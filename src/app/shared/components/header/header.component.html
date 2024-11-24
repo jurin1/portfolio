@@ -1,0 +1,67 @@
+<main>
+  <a href="#home" class="logo"
+    ><img src="assets/img/logo/logo_full.png" (click)="resetSelected()"
+  /></a>
+  <div class="link-container">
+    <div>
+      <a
+        href="#aboutMe"
+        (mouseenter)="aboutMe = true"
+        (mouseleave)="aboutMe = false"
+        (click)="selectItem('aboutMe')"
+        [class.selected]="selectedItem === 'aboutMe'"
+        >About Me</a
+      >
+      <div
+        class="underline"
+        [class.selected-line]="selectedItem === 'aboutMe'"
+        [class.hover]="aboutMe === true"
+      ></div>
+    </div>
+    <div>
+      <a
+        href="#skills"
+        (mouseenter)="skills = true"
+        (mouseleave)="skills = false"
+        (click)="selectItem('skills')"
+        [class.selected]="selectedItem === 'skills'"
+        >Skills</a
+      >
+      <div
+        class="underline"
+        [class.selected-line]="selectedItem === 'skills'"
+        [class.hover]="skills === true"
+      ></div>
+    </div>
+    <div>
+      <a
+        href="#portfolio"
+        (mouseenter)="portfolio = true"
+        (mouseleave)="portfolio = false"
+        (click)="selectItem('portfolio')"
+        [class.selected]="selectedItem === 'portfolio'"
+        >Portfolio</a
+      >
+      <div
+        class="underline"
+        [class.selected-line]="selectedItem === 'portfolio'"
+        [class.hover]="portfolio === true"
+      ></div>
+    </div>
+  </div>
+  <img
+    src="assets/img/header/burger.png"
+    class="menu-button"
+    #menuButton
+    (click)="openMenu()"
+  />
+  <aside class="dialog-menu hide-menu" #menuDialog>
+    <img src="assets/img/logo/logo_full.png" />
+    <section>
+      <a href="#aboutMe" (click)="openMenu()">About Me</a>
+      <a href="#skills" (click)="openMenu()">Skills</a>
+      <a href="#portfolio" (click)="openMenu()">Portfolio</a>
+      <a href="#contact" (click)="openMenu()">Contact</a>
+    </section>
+  </aside>
+</main>

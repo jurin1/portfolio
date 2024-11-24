@@ -1,0 +1,50 @@
+main {
+    margin-top: 107px;
+    padding: 100px;
+    background-color: #141D2F;
+    color: #FFFFFF;
+    font-family: Poppins; 
+    font-style: normal;
+    line-height: 120%;
+    position: relative;
+
+    div {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+h1 {
+    margin: 32px 0;
+}
+
+h2 {
+    margin: 24px 0;
+}
+
+h3 {
+    margin: 16px 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(151, 71, 255, 1);
+     
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.bg-green {
+    position: absolute;
+    top: 0;
+    right: -240px;
+}
+
+.bg-purple {
+    position: absolute;
+    top: 1280px;
+    right: 40px;
+}
+

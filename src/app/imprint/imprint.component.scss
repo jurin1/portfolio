@@ -1,0 +1,48 @@
+main {
+    margin-top: 107.61px;
+    padding: 100px;
+    background-color: #141D2F;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+
+p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(151, 71, 255, 1);
+     
+}
+
+.imprint {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-green {
+    position: absolute;
+    top: 80px;
+    right: -400px;
+    z-index: 0;
+}
+
+.bg-purple {
+    position: absolute;
+    top: 320px;
+    left: -440px;
+    z-index: 0;
+}

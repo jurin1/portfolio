@@ -1,0 +1,163 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141D2F;
+}
+
+.logo{
+  
+  img{
+    margin: 20px 0px 0px 20px;
+    height: 100px;
+  }
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 46px;
+  margin-right: 20px;
+
+  div {
+    position: relative;
+
+
+
+    a {
+      color: #FFFFFF;
+      font-family: Poppins;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      text-decoration: none;
+       
+
+      &:hover {
+        color: rgba(112,230,28,1);
+      }
+
+      &.selected {
+        color: rgba(112, 230, 28, 1);
+      }
+    }
+  }
+}
+
+.underline {
+  width: 55.5px;
+  height: 0;
+  position: absolute !important;
+  top: 30px;
+  left: 0;
+  border: 1.5px solid rgba(151,71,255,1);
+  z-index: 1000;
+  display: none;
+
+  &.selected-line {
+    display: block;
+  }
+
+  &.hover {
+    display: block;
+  }
+}
+
+.menu-button {
+  display: none;
+  z-index: 99;
+   
+}
+
+.dialog-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #141D2FCC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.08s ease-out;
+
+  img {
+    position: absolute;
+    top: 37px;
+    left: 24px;
+    height: 30px;
+    animation: rotate360 10s linear infinite;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+
+    a {
+      color: #FFFFFF;
+      font-family: Poppins;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      text-decoration: none;
+       
+    }
+  }
+}
+
+.show-menu {
+  transform: translateX(0);
+}
+
+.hide-menu {
+  transform: translateX(100%);
+}
+
+@media (min-width: 2800px) {
+  main {
+    padding: 37px 450px;
+  }
+}
+
+@media (min-width: 2450px) and (max-width: 2799px) {
+  main {
+    padding: 37px 350px;
+  }
+}
+
+@media (min-width: 2050px) and (max-width: 2449px) {
+  main {
+    padding: 37px 250px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2049px) {
+  main {
+    padding: 37px 150px;
+  }
+}
+
+@media (max-width:918px) {
+  main {
+    padding: 37px 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  main {
+    padding: 37px 24px;
+  }
+
+  .link-container {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    height: 30px;
+  }
+}

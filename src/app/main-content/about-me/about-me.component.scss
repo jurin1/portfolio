@@ -15,6 +15,7 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  padding-bottom: 20px;
 }
 
 span {
@@ -36,7 +37,7 @@ li {
 }
 
 .about {
-flex: 1;
+  flex: 1;
   flex-direction: column;
   z-index: 2;
   width: 471px;
@@ -56,9 +57,8 @@ flex: 1;
   vertical-align: text-top;
 }
 
-.about-me-img{
+.about-me-img {
   flex: 1;
-
 }
 
 .circle {
@@ -74,12 +74,10 @@ flex: 1;
   justify-content: flex-start;
   align-items: center;
 
-
   img {
-  width: auto;
+    width: auto;
     height: 130%;
     object-fit: cover;
-
   }
 }
 
@@ -94,11 +92,10 @@ flex: 1;
 }
 
 .background-vector {
-    position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .growImage {
@@ -109,21 +106,17 @@ flex: 1;
   }
 }
 
-
-@media (max-width: 1510px){
-
-  .line{
+@media (max-width: 1510px) {
+  .line {
     width: 600px;
-    top: 50%
+    top: 50%;
   }
-  
 }
 
 @media (max-width: 1400px) {
-  .line{
+  .line {
     top: 48%;
   }
-  
 }
 
 @media (max-width: 1228px) {
@@ -135,7 +128,7 @@ flex: 1;
     width: 400px;
   }
 
-  .line{
+  .line {
     top: 45%;
     width: 400px;
   }
@@ -183,7 +176,7 @@ flex: 1;
 
 @media (max-width: 850px) {
   main {
-    padding: 148px 24px 0 24px;
+    padding: 50px 24px 0 24px;
     width: unset;
   }
 
@@ -203,6 +196,24 @@ flex: 1;
 @media (max-width: 422px) {
   h1 {
     font-size: 56px;
+  }
+
+  table tr {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  td:last-child {
+    flex: 1;
+    max-width: 400px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .growImage {
+    margin-bottom: 20px;
   }
 }
 

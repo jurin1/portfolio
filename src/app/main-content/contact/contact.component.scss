@@ -1,15 +1,27 @@
 main {
-  position: relative;
-  padding: 0 100px 180px 100px;
   background-color: #141d2f;
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
+  padding-bottom: 50px;
+}
 
-  section {
+.section-form {
     position: relative;
-    z-index: 99999;
+    z-index: 90;
+    display: flex;
+    gap: 10vw;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 80%;
+    justify-content: center;
+
   }
+
+.form {
+    position: relative;
+
+}
+
+.contact-text {
+    text-align: left;
 }
 
 h1 {
@@ -19,6 +31,22 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  text-align: center;
+}
+
+.contact-header {
+    gap: 20px;
+position: relative;
+
+}
+
+.line {
+    width: calc(50vw - 100px);
+    max-width: 400px;
+    height: 0px;
+    border: 2px solid rgba(151, 71, 255, 1);
+    top: 50%;
+    position: absolute;
 }
 
 h2 {
@@ -28,6 +56,7 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  padding-bottom: 50px;
 }
 
 span {
@@ -156,9 +185,7 @@ textarea {
 .confirm-area {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 37px;
-  margin-top: 16px;
+
 
   div {
     width: 100%;
@@ -166,16 +193,6 @@ textarea {
     display: flex;
     gap: 8px;
 
-    p {
-      color: #e61c40;
-      font-family: Poppins;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 120%;
-      position: absolute;
-      top: 40px;
-    }
 
     input[type="checkbox"] {
       appearance: none;
@@ -212,8 +229,6 @@ textarea {
     }
 
     span {
-      display: flex;
-      flex-wrap: wrap;
 
       a {
         color: rgba(151, 71, 255, 1);
@@ -227,6 +242,19 @@ textarea {
   }
 }
 
+.confirm-area{
+  margin-top: 25px;
+      p {
+          color: #e61c40;
+          font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          align-items: flex-start;
+          display: flex;
+        }
+}
+
 .border-checkbox {
   border: 2px solid rgba(112, 230, 28, 1);
 }
@@ -238,12 +266,12 @@ button {
   padding: 15px 30px;
   justify-content: center;
   align-items: center;
+  margin: 20px auto;
   gap: 10px;
   border: none;
   border-radius: 10px;
   background: rgba(112, 230, 28, 1);
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
   transition: transform 300ms ease-out;
 
   span {
@@ -271,39 +299,11 @@ button {
   }
 }
 
-.main-section {
-  width: 800px;
 
-  h1 {
-    margin-bottom: 85px;
-    text-align: right;
-  }
 
-  h2 {
-    margin-bottom: 35px;
-  }
 
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-}
 
-.form-section {
-  padding-top: 193px;
-  position: relative;
-}
 
-.line {
-  width: 500px;
-  height: 0px;
-  flex-shrink: 0;
-  border: 2px solid rgba(151, 71, 255, 1);
-  position: absolute;
-  left: 0;
-  top: 54px;
-}
 
 .arrow-up {
   z-index: 2;
@@ -386,13 +386,6 @@ button {
     font-size: 80px;
   }
 
-  .line {
-    top: 49px;
-  }
-
-  .form-section {
-    padding-top: 188px;
-  }
 }
 
 @media (max-width: 1302px) {
@@ -408,13 +401,6 @@ button {
     width: 300px;
   }
 
-  .line {
-    top: 43px;
-  }
-
-  .form-section {
-    padding-top: 172px;
-  }
 }
 
 @media (max-width: 1228px) {
@@ -428,14 +414,9 @@ button {
     width: 500px;
   }
 
-  .form-section {
-    width: 578px;
-    padding-top: 164px;
-  }
 
-  .line {
-    top: 36px;
-  }
+
+
 
   .confirm-area {
     div {
@@ -450,14 +431,6 @@ button {
   h1 {
     font-size: 56px;
   }
-
-  .line {
-    top: 32px;
-  }
-
-  .form-section {
-    padding-top: 156px;
-  }
 }
 
 @media (max-width: 1075px) {
@@ -469,35 +442,17 @@ button {
     width: 100%;
   }
 
-  .form-section {
-    width: 500px;
-    padding-top: 146px;
-  }
-
   input[type="text"],
   input[type="email"],
   textarea {
     width: 423px;
   }
 
-  .line {
-    top: 28px;
-  }
-}
 
-@media (max-width: 918px) {
-  main {
-    padding: 0 50px 180px 50px;
-  }
-
-  .line {
-    width: 25px;
-  }
 }
 
 @media (max-width: 850px) {
   main {
-    padding: 0 24px 180px 24px;
     flex-direction: column;
   }
 
@@ -510,14 +465,12 @@ button {
     width: -webkit-fill-available;
   }
 
-  .line {
-    width: 16px;
-  }
 
-  .form-section {
+
+  .form {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
 
     form {
       width: 100%;
@@ -582,6 +535,14 @@ button {
   .bg-img {
     height: 600px;
   }
+
+        .section-form {
+          flex-direction: column;
+        }
+
+  .form{
+    width: 100%;
+  }
 }
 
 @media (max-width: 509px) {
@@ -592,6 +553,8 @@ button {
       }
     }
   }
+
+
 
   .bg-img {
     height: 500px;

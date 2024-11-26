@@ -1,93 +1,162 @@
 <main>
-    <section class="dialog" *ngIf="dialogOpen">
-        <div>
-            <div>
-                <h1 *ngIf="sendingMail">Your message is being sent!</h1>
-                <h1 *ngIf="mailSend">Your message has been sent!</h1>
-                <h2 *ngIf="mailSend">I will answer you as soon as possible.</h2>
-            </div>
-        </div>
-    </section>
-    <section class="main-section">
-        <h1>Contact</h1>
-        <h2>Got a problem to solve?</h2>
-        <div>
-            <span>Contact me through this form, I am interested in hearing you,
-                knowing your ideas and contributing to your projects with my
-                work.</span>
-            <span>Need a Frontend developer? <b>Contact me!</b></span>
-        </div>
-    </section>
-    <section class="form-section">
-        <form (submit)="sendMail()" #contactForm>
-            <div class="input-area">
-                <div>
-                    <input type="text" class="border" name="name"
-                        placeholder="Your name" #name (input)="checkNameEmpty()"
-                        (focus)="nameClicked = true">
-                    <img src="assets/img/contact/error.png" class="error-img"
-                        *ngIf="!nameValue && nameClicked">
-                    <img src="assets/img/contact/accepted.png"
-                        class="error-img" *ngIf="nameValue && nameClicked">
-                    <p *ngIf="!nameValue && nameClicked"
-                        class="error-text">Your name is required</p>
-                </div>
-                <div>
-                    <input type="email" class="border" name="email"
-                        placeholder="Your email"
-                        #email (input)="checkEmailEmpty()"
-                        (focus)="emailClicked = true">
-                    <img src="assets/img/contact/error.png" class="error-img"
-                        *ngIf="!emailValue && emailClicked">
-                    <img src="assets/img/contact/accepted.png"
-                        class="error-img" *ngIf="emailValue && emailClicked">
-                    <p *ngIf="!emailValue && emailClicked"
-                        class="error-text">Your email is required</p>
-                </div>
-                <div>
-                    <textarea name="message" class="border" cols="30" rows="10"
-                        placeholder="Your message" #message
-                        (input)="checkMessageEmpty()"
-                        (focus)="messageClicked = true"></textarea>
-                    <img src="assets/img/contact/error.png" class="error-img"
-                        *ngIf="!messageValue && messageClicked">
-                    <img src="assets/img/contact/accepted.png"
-                        class="error-img"
-                        *ngIf="messageValue && messageClicked">
-                    <p *ngIf="!messageValue && messageClicked"
-                        class="message-error-text">Your message is empty</p>
-                </div>
-            </div>
-            <div class="confirm-area">
-                <div>
-                    <input type="checkbox" class="border-checkbox" name="checkbox"
-                        #checkbox
-                        (click)="activateCheckbox(); checkboxClicked = true">
-                    <span>I've read the &nbsp;<a href="privacy_policy"> Privacy
-                            policy </a>&nbsp; and
-                        agree to the
-                        processing of my data as outlined.</span>
-                    <p *ngIf="!checkboxActive && checkboxClicked">Please accept
-                        the privacy policy.</p>
-                </div>
-                <button type="submit"
-                    [disabled]="!(checkboxActive && nameValue && emailValue && messageValue)"
-                    #button><span>Send message :&#041;</span></button>
-            </div>
-        </form>
-    </section>
+<section class="dialog" *ngIf="dialogOpen">
+  <div>
+    <div>
+      <h1 *ngIf="sendingMail">Your message is being sent...</h1>
+      <h1 *ngIf="mailSuccess">Your message has been sent!</h1>
+      <h2 *ngIf="mailSuccess">I will answer you as soon as possible.</h2>
+      <h1 *ngIf="mailError">There was a problem sending your message.</h1>
+      <h2 *ngIf="mailError">Please try again later.</h2>
+    </div>
+  </div>
+</section>
+  <div class="contact-header">
     <div class="line"></div>
-    <a href="#top" class="arrow-up">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g id="arrow-down-line">
-                <path id="Vector"
-                    d="M11 7.828L6.34295 12.485C5.95249 12.8755 5.31942 12.8755 4.92895 12.485C4.53849 12.0945 4.53849 11.4615 4.92895 11.071L11.2928 4.70711C11.6834 4.31658 12.3165 4.31658 12.7071 4.70711L19.071 11.071C19.4614 11.4615 19.4614 12.0945 19.071 12.485C18.6805 12.8755 18.0474 12.8755 17.657 12.485L13 7.828L13 19C13 19.5523 12.5522 20 12 20C11.4477 20 11 19.5523 11 19L11 7.828Z"
-                    fill="white" />
-            </g>
-        </svg>
-    </a>
+    <h1>Contact</h1>
+  </div>
+  <section class="section-form">
+    <div class="contact-text">
+      <h2>Got a problem to solve?</h2>
+      <div>
+        <span
+          >Contact me through this form, I am interested in hearing you, knowing
+          your ideas and contributing to your projects with my work.</span
+        >
+        <span
+          >Need a Frontend developer?
+          <b style="color: rgba(151, 71, 255, 1)">Contact me!</b></span
+        >
+      </div>
+    </div>
+    <div class="form">
+      <form (submit)="sendMail()" #contactForm>
+        <div class="input-area">
+          <div>
+            <input
+              type="text"
+              class="border"
+              name="name"
+              placeholder="Your name"
+              #name
+              (input)="checkNameEmpty()"
+              (focus)="nameClicked = true"
+            />
+            <img
+              src="assets/img/contact/error.png"
+              class="error-img"
+              *ngIf="!nameValue && nameClicked"
+            />
+            <img
+              src="assets/img/contact/accepted.png"
+              class="error-img"
+              *ngIf="nameValue && nameClicked"
+            />
+            <p *ngIf="!nameValue && nameClicked" class="error-text">
+              Your name is required
+            </p>
+          </div>
+          <div>
+            <input
+              type="email"
+              class="border"
+              name="email"
+              placeholder="Your email"
+              #email
+              (input)="checkEmailEmpty()"
+              (focus)="emailClicked = true"
+            />
+            <img
+              src="assets/img/contact/error.png"
+              class="error-img"
+              *ngIf="!emailValue && emailClicked"
+            />
+            <img
+              src="assets/img/contact/accepted.png"
+              class="error-img"
+              *ngIf="emailValue && emailClicked"
+            />
+            <p *ngIf="!emailValue && emailClicked" class="error-text">
+              Your email is required
+            </p>
+          </div>
+          <div>
+            <textarea
+              name="message"
+              class="border"
+              cols="30"
+              rows="10"
+              placeholder="Your message"
+              #message
+              (input)="checkMessageEmpty()"
+              (focus)="messageClicked = true"
+            ></textarea>
+            <img
+              src="assets/img/contact/error.png"
+              class="error-img"
+              *ngIf="!messageValue && messageClicked"
+            />
+            <img
+              src="assets/img/contact/accepted.png"
+              class="error-img"
+              *ngIf="messageValue && messageClicked"
+            />
+            <p
+              *ngIf="!messageValue && messageClicked"
+              class="message-error-text"
+            >
+              Your message is empty
+            </p>
+          </div>
+        </div>
+        <div class="confirm-area">
+          <div>
+            <input
+              type="checkbox"
+              class="border-checkbox"
+              name="checkbox"
+              #checkbox
+              (click)="activateCheckbox(); checkboxClicked = true"
+            />
+            <span
+              >I've read the <a href="../privacy-policy">Privacy policy</a
+              > and agree to the processing of my data as outlined.</span
+            >
+          </div>
+          <p *ngIf="!checkboxActive && checkboxClicked">
+            Please accept the privacy policy.
+          </p>
+          <button
+            type="submit"
+            [disabled]="
+              !(checkboxActive && nameValue && emailValue && messageValue)
+            "
+            #button
+          >
+            <span>Send message :&#041;</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <a href="#top" class="arrow-up">
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="arrow-down-line">
+        <path
+          id="Vector"
+          d="M11 7.828L6.34295 12.485C5.95249 12.8755 5.31942 12.8755 4.92895 12.485C4.53849 12.0945 4.53849 11.4615 4.92895 11.071L11.2928 4.70711C11.6834 4.31658 12.3165 4.31658 12.7071 4.70711L19.071 11.071C19.4614 11.4615 19.4614 12.0945 19.071 12.485C18.6805 12.8755 18.0474 12.8755 17.657 12.485L13 7.828L13 19C13 19.5523 12.5522 20 12 20C11.4477 20 11 19.5523 11 19L11 7.828Z"
+          fill="white"
+        />
+      </g>
+    </svg>
+  </a>
 </main>
 <div class="bg-img">
-    <img src="assets/img/background/purple_shadow.png" class="shadow">
+  <img src="assets/img/background/purple_shadow.png" class="shadow" />
 </div>

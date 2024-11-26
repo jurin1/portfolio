@@ -35,7 +35,8 @@ export class ContactComponent {
 
   dialogOpen: boolean = false;
   sendingMail: boolean = false;
-  mailSend: boolean = false;
+  mailSuccess: boolean = false;
+  mailError: boolean = false;
 
   checkNameEmpty() {
     if (this.name.nativeElement.value) {
@@ -73,17 +74,21 @@ export class ContactComponent {
     }
   }
 
-  activateCheckbox() {
-    if (this.checkbox.nativeElement.checked) {
-      this.checkboxActive = true;
-    } else if (!this.checkbox.nativeElement.checked && this.checkboxClicked) {
-      this.checkboxActive = false;
+activateCheckbox() {
+  const isChecked = this.checkbox.nativeElement.checked;
+
+  if (isChecked) {
+    this.checkboxActive = true;
+    this.checkbox.nativeElement.style.border = '';
+  } else {
+    this.checkboxActive = false;
+    if (this.checkboxClicked) {
       this.checkbox.nativeElement.classList.remove('border');
-      this.checkbox.nativeElement.style.border = '1px solid #E61C40';
-    } else {
-      this.checkboxActive = false;
+      this.checkbox.nativeElement.style.border = '1px solid #E61C40'; 
     }
   }
+}
+
 
   validateEmail(email: string) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
@@ -92,24 +97,44 @@ export class ContactComponent {
     return (false)
   }
 
-  async sendMail() {
+async sendMail() {
     this.disableInput();
     this.openDialog();
 
-    let formData = new FormData();
-    formData.append('name', this.name.nativeElement.value);
-    formData.append('email', this.email.nativeElement.value);
-    formData.append('message', this.message.nativeElement.value);
-    await fetch('https://nigen.de/send_mail.php', {
-      method: 'POST',
-      body: formData
-    })
+    try {
+        const formData = {
+            name: this.name.nativeElement.value,
+            email: this.email.nativeElement.value,
+            message: this.message.nativeElement.value
+        };
 
-    setTimeout(() => {
-      this.enableInput();
-      this.clearInput();
-    }, 5000);
-  }
+        const response = await fetch('http://localhost:3000/send_mail', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
+
+        this.sendingMail = false;
+
+        if (!response.ok) {
+            throw new Error(`Server error: ${response.status}`);
+        }
+
+        this.mailSuccess = true;
+        console.log('Nachricht erfolgreich gesendet');
+    } catch (error) {
+        this.sendingMail = false;
+        this.mailError = true;
+        console.error('Fehler beim Senden der Nachricht:', error);
+    } finally {
+        setTimeout(() => {
+            this.enableInput();
+            this.clearInput();
+            this.dialogOpen = false;
+        }, 5000);
+    }
+}
+
 
   disableInput() {
     this.name.nativeElement.disabled = true;
@@ -161,13 +186,11 @@ export class ContactComponent {
   openDialog() {
     this.dialogOpen = true;
     this.sendingMail = true;
-    setTimeout(() => {
-      this.sendingMail = false;
-      this.mailSend = true;
-    }, 1000);
+
     setTimeout(() => {
       this.dialogOpen = false;
-      this.mailSend = false;
-    }, 5000);
+      this.mailSuccess = false;
+      this.mailError = false;
+    }, 10000);
   }
 }

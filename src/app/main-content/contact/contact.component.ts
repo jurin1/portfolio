@@ -7,7 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [MatSlideToggleModule, MatCheckboxModule, NgStyle, NgIf, FormsModule, ReactiveFormsModule],
+  imports: [MatSlideToggleModule, MatCheckboxModule, NgIf, FormsModule, ReactiveFormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

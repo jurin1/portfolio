@@ -1,15 +1,15 @@
 <main>
-<section class="dialog" *ngIf="dialogOpen">
-  <div>
+  <section class="dialog" *ngIf="dialogOpen">
     <div>
-      <h1 *ngIf="sendingMail">Your message is being sent...</h1>
-      <h1 *ngIf="mailSuccess">Your message has been sent!</h1>
-      <h2 *ngIf="mailSuccess">I will answer you as soon as possible.</h2>
-      <h1 *ngIf="mailError">There was a problem sending your message.</h1>
-      <h2 *ngIf="mailError">Please try again later.</h2>
+      <div>
+        <h1 *ngIf="sendingMail">Your message is being sent...</h1>
+        <h1 *ngIf="mailSuccess">Your message has been sent!</h1>
+        <h2 *ngIf="mailSuccess">I will answer you as soon as possible.</h2>
+        <h1 *ngIf="mailError">There was a problem sending your message.</h1>
+        <h2 *ngIf="mailError">Please try again later.</h2>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
   <div class="contact-header">
     <div class="line"></div>
     <h1>Contact</h1>
@@ -118,8 +118,8 @@
               (click)="activateCheckbox(); checkboxClicked = true"
             />
             <span
-              >I've read the <a href="../privacy-policy">Privacy policy</a
-              > and agree to the processing of my data as outlined.</span
+              >I've read the <a href="../privacy-policy">Privacy policy</a> and
+              agree to the processing of my data as outlined.</span
             >
           </div>
           <p *ngIf="!checkboxActive && checkboxClicked">
@@ -139,24 +139,28 @@
     </div>
   </section>
 
-  <a href="#top" class="arrow-up">
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g id="arrow-down-line">
-        <path
-          id="Vector"
-          d="M11 7.828L6.34295 12.485C5.95249 12.8755 5.31942 12.8755 4.92895 12.485C4.53849 12.0945 4.53849 11.4615 4.92895 11.071L11.2928 4.70711C11.6834 4.31658 12.3165 4.31658 12.7071 4.70711L19.071 11.071C19.4614 11.4615 19.4614 12.0945 19.071 12.485C18.6805 12.8755 18.0474 12.8755 17.657 12.485L13 7.828L13 19C13 19.5523 12.5522 20 12 20C11.4477 20 11 19.5523 11 19L11 7.828Z"
-          fill="white"
-        />
-      </g>
-    </svg>
-  </a>
+  <div class="footer-contact">
+    <div class="shadow_contact">
+      <img src="assets/img/background/purple_shadow.png" class="shadow" />
+    </div>
+    <div style="margin-right: 25px;">
+      <a href="#top" class="arrow-up">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="arrow-down-line">
+            <path
+              id="Vector"
+              d="M11 7.828L6.34295 12.485C5.95249 12.8755 5.31942 12.8755 4.92895 12.485C4.53849 12.0945 4.53849 11.4615 4.92895 11.071L11.2928 4.70711C11.6834 4.31658 12.3165 4.31658 12.7071 4.70711L19.071 11.071C19.4614 11.4615 19.4614 12.0945 19.071 12.485C18.6805 12.8755 18.0474 12.8755 17.657 12.485L13 7.828L13 19C13 19.5523 12.5522 20 12 20C11.4477 20 11 19.5523 11 19L11 7.828Z"
+              fill="white"
+            />
+          </g>
+        </svg>
+      </a>
+    </div>
+  </div>
 </main>
-<div class="bg-img">
-  <img src="assets/img/background/purple_shadow.png" class="shadow" />
-</div>

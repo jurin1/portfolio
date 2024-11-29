@@ -1,17 +1,15 @@
-import { NgIf } from '@angular/common';
 import { Component, ViewChild, ElementRef, Renderer2 } from '@angular/core';
-import { timeout } from 'rxjs';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgIf],
+  imports: [],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
 
-  menuButtonImg = ['assets/img/header/burger.png', 'assets/img/header/Transition.png', 'assets/img/header/close_medium.png', 'assets/img/header/CLOSE_FINAL.png']
+  menuButtonImg = ['assets/img/header/burger.png', 'assets/img/header/Transition.png', 'assets/img/header/close_medium.png', 'assets/img/header/close.png']
 
   @ViewChild('menuButton') menuButton!: ElementRef;
   @ViewChild('menuDialog') menuDialog!: ElementRef;
@@ -42,19 +40,24 @@ export class HeaderComponent {
     this.selectedItem = null;
   }
 
-  openMenu() {
-    if (!this.menuOpen) {
-      this.menuOpen = true;      
-      this.startImgAnimationOpen();
-      this.renderer.removeClass(this.menuDialog.nativeElement, 'hide-menu');
-      this.renderer.addClass(this.menuDialog.nativeElement, 'show-menu');
-    }else if (this.menuOpen) {
-      this.menuOpen = false;
-      this.startImgAnimationClose();
-      this.renderer.removeClass(this.menuDialog.nativeElement, 'show-menu');
-      this.renderer.addClass(this.menuDialog.nativeElement, 'hide-menu');
-    }
+openMenu() {
+  this.menuOpen = !this.menuOpen; 
+
+
+  if (this.menuOpen) {
+    this.startImgAnimationOpen();
+    this.toggleMenuClasses('hide-menu', 'show-menu');
+  } else {
+    this.startImgAnimationClose();
+    this.toggleMenuClasses('show-menu', 'hide-menu');
   }
+}
+
+
+private toggleMenuClasses(removeClass: string, addClass: string): void {
+  this.renderer.removeClass(this.menuDialog.nativeElement, removeClass);
+  this.renderer.addClass(this.menuDialog.nativeElement, addClass);
+}
 
   startImgAnimationOpen() {
     let interval = setInterval(() => {

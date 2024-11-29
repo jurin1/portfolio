@@ -108,7 +108,7 @@ async sendMail() {
             message: this.message.nativeElement.value
         };
 
-        const response = await fetch('http://localhost:3000/send_mail', {
+        const response = await fetch('https://formular.neizcon.de/send_mail', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)

@@ -4,24 +4,22 @@ main {
 }
 
 .section-form {
-    position: relative;
-    z-index: 90;
-    display: flex;
-    gap: 10vw;
-    margin: 0 auto;
-    padding-top: 50px;
-    width: 80%;
-    justify-content: center;
-
-  }
+  position: relative;
+  z-index: 90;
+  display: flex;
+  gap: 10vw;
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 80%;
+  justify-content: center;
+}
 
 .form {
-    position: relative;
-
+  position: relative;
 }
 
 .contact-text {
-    text-align: left;
+  text-align: left;
 }
 
 h1 {
@@ -35,18 +33,17 @@ h1 {
 }
 
 .contact-header {
-    gap: 20px;
-position: relative;
-
+  gap: 20px;
+  position: relative;
 }
 
 .line {
-    width: calc(50vw - 100px);
-    max-width: 400px;
-    height: 0px;
-    border: 2px solid rgba(151, 71, 255, 1);
-    top: 50%;
-    position: absolute;
+  width: calc(50vw - 100px);
+  max-width: 400px;
+  height: 0px;
+  border: 2px solid rgba(151, 71, 255, 1);
+  top: 50%;
+  position: absolute;
 }
 
 h2 {
@@ -186,13 +183,11 @@ textarea {
   display: flex;
   flex-direction: column;
 
-
   div {
     width: 100%;
     padding: 16px 0 12px 0;
     display: flex;
     gap: 8px;
-
 
     input[type="checkbox"] {
       appearance: none;
@@ -229,7 +224,6 @@ textarea {
     }
 
     span {
-
       a {
         color: rgba(151, 71, 255, 1);
         text-decoration: none;
@@ -242,17 +236,17 @@ textarea {
   }
 }
 
-.confirm-area{
+.confirm-area {
   margin-top: 25px;
-      p {
-          color: #e61c40;
-          font-family: Poppins;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          align-items: flex-start;
-          display: flex;
-        }
+  p {
+    color: #e61c40;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    align-items: flex-start;
+    display: flex;
+  }
 }
 
 .border-checkbox {
@@ -299,11 +293,20 @@ button {
   }
 }
 
+.footer-contact {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
-
-
-
-
+.shadow_contact {
+  bottom: 200px;
+  height: 200px;
+  z-index: 80;
+  position: relative;
+  left: -300px;
+}
 
 .arrow-up {
   z-index: 2;
@@ -315,8 +318,6 @@ button {
   flex-shrink: 0;
   border-radius: 41px;
   border: 2px solid #ffffff;
-  position: absolute;
-  right: 100px;
   bottom: 90px;
 
   &:hover {
@@ -372,20 +373,10 @@ button {
   }
 }
 
-.bg-img {
-  position: absolute;
-  bottom: 200px;
-  left: -320px;
-  width: 678px;
-  height: 805px;
-  z-index: 80;
-}
-
 @media (max-width: 1393px) {
   h1 {
     font-size: 80px;
   }
-
 }
 
 @media (max-width: 1302px) {
@@ -400,7 +391,6 @@ button {
   .main-section {
     width: 300px;
   }
-
 }
 
 @media (max-width: 1228px) {
@@ -413,10 +403,6 @@ button {
   textarea {
     width: 500px;
   }
-
-
-
-
 
   .confirm-area {
     div {
@@ -447,8 +433,6 @@ button {
   textarea {
     width: 423px;
   }
-
-
 }
 
 @media (max-width: 850px) {
@@ -464,8 +448,6 @@ button {
   textarea {
     width: -webkit-fill-available;
   }
-
-
 
   .form {
     display: flex;
@@ -484,8 +466,8 @@ button {
     }
   }
 
-  .bg-img {
-    height: 640px;
+  .shadow_contact {
+    display: none;
   }
 
   .arrow-up {
@@ -520,6 +502,7 @@ button {
   .shadow {
     position: relative;
     top: -100px;
+    display: none;
   }
 }
 
@@ -532,16 +515,20 @@ button {
     }
   }
 
-  .bg-img {
-    height: 600px;
+  .shadow_contact {
+    display: none;
   }
 
-        .section-form {
-          flex-direction: column;
-        }
+  .section-form {
+    flex-direction: column;
+  }
 
-  .form{
+  .form {
     width: 100%;
+  }
+
+  .footer-contact {
+    margin-top: -80px;
   }
 }
 
@@ -554,9 +541,11 @@ button {
     }
   }
 
+  .section-form {
+    margin-bottom: 35%;
+  }
 
-
-  .bg-img {
-    height: 500px;
+  .shadow_contact {
+    display: none;
   }
 }

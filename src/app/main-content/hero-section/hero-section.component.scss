@@ -24,9 +24,9 @@ main {
 .vector {
   position: absolute;
   top: 460px;
-  left: -10px;
-  width: 104%;
-  height: 1079px;
+  left: 0;
+  width: 100vw;
+  height: auto;
   z-index: 5;
 }
 
@@ -62,8 +62,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 3;
-  margin-right: 15px;
+  z-index: 6;
+  margin-right: 9px;
 }
 
 .welcome-txt {
@@ -122,9 +122,6 @@ h3 {
   background-color: rgba(112, 230, 28, 1);
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   z-index: 3;
-  // position: absolute;
-  // top: 664px;
-  // right: 408px;
   text-decoration: none;
 
   transition: transform 300ms ease-out;
@@ -215,7 +212,7 @@ h3 {
   border: 2px solid rgba(151, 71, 255, 1);
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   h3 {
     font-size: 43px;
   }
@@ -234,6 +231,9 @@ h3 {
 }
 
 @media (max-width: 1010px) {
+  .hero_right_section{
+    width: 450px;
+  }
   main {
     section {
       padding: 0 50px;
@@ -319,12 +319,6 @@ h3 {
     top: 48px;
   }
 
-  .vector {
-    top: 210px;
-    width: 1400px;
-    height: 1079px;
-  }
-
   .button {
     right: unset;
     top: 846px;
@@ -346,6 +340,7 @@ h3 {
     width: 80px;
   }
 }
+
 
 @media (max-width: 710px) {
   h1 {
@@ -415,9 +410,26 @@ h3 {
   .line {
     width: 40px;
   }
+
+  .vector{
+    height: 200px;
+    top: 711px;
+  }
 }
 
+
+
 @media (max-width: 480px) {
+
+    .welcome-txt {
+        h2 {
+          font-size: 54px;
+        }
+    
+        h1 {
+          font-size: 50px;
+        }
+      }
   h1 {
     font-size: 24px;
   }
@@ -431,12 +443,14 @@ h3 {
   }
 
   .vector {
-    top: 150px;
+    top: 560px;
+    width: 480px;
+    height: 200px;
   }
 
   .personal-img {
     height: 480px;
-    margin-top: 60pxpx;
+    margin-top: 60px;
   }
 
   .button {
@@ -454,6 +468,10 @@ h3 {
         width: 24px;
       }
     }
+  }
+
+  .welcome-txt{
+    margin-right: 0;
   }
 }
 
@@ -489,8 +507,8 @@ h3 {
     width: 400px;
   }
 
-  .vector {
-    top: 72px;
+  .vector{
+    top: 480px;
   }
 
   .button {

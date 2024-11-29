@@ -3,6 +3,7 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: #141D2F;
+  // max-width: 80%;
 }
 
 .logo{
@@ -11,6 +12,10 @@ main {
     margin: 20px 0px 0px 20px;
     height: 100px;
   }
+}
+
+aside{
+  display: none;
 }
 
 .link-container {
@@ -68,6 +73,7 @@ main {
 .menu-button {
   display: none;
   z-index: 99;
+
    
 }
 

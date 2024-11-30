@@ -78,7 +78,7 @@ p {
 
       &:hover {
         display: inline-flex;
-        height: 75px;
+        height: 90px;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
@@ -86,6 +86,8 @@ p {
         flex-shrink: 0;
       }
     }
+
+
   }
 }
 
@@ -158,11 +160,21 @@ section {
   display: none;
 }
 
+/* Ultrawide*/
+@media (min-width: 3040px) and (min-height: 2000px) {
+  main{
+    justify-content: space-around;
+  }
+  .line{
+    width: 17%;
+  }
+}
 
 @media (max-width: 1302px) {
   h1 {
     font-size: 72px;
   }
+
 
   .icon-container {
     gap: 80px;

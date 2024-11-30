@@ -34,12 +34,18 @@ $portfolio-page-theme: mat.define-light-theme((color: (primary: $portfolio-page-
   scroll-behavior: smooth;
   scrollbar-width: auto;
   max-width: 100%;
+
+
 }
 
-.main-content {
-  // position: relative;
-  overflow: hidden;
+.main-content{
+  position: relative;
+    overflow: hidden;
 
+}
+
+a:hover button:hover{
+  cursor: pointer;
 }
 
 app-main-content {

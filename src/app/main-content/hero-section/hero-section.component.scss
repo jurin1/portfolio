@@ -212,6 +212,18 @@ h3 {
   border: 2px solid rgba(151, 71, 255, 1);
 }
 
+/* Ultrawide*/
+@media (min-width: 2800px) {
+  .vector {
+    top: 718px;
+    height: 252px;
+  }
+
+  .hero_right_section{
+        margin-right: 15%;
+  }
+}
+
 @media (max-width: 1280px) {
   h3 {
     font-size: 43px;

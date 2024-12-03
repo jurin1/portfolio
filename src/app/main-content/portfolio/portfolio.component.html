@@ -2,11 +2,14 @@
     <section>
         <div>
             <div class="left-line"></div>
-            <h1 id="headline">Portfolio</h1>
+            <h1 id="headline">{{ 'PORTFOLIO.TITLE' | translate }}</h1>
             <div class="right-line" id="rightLine"></div>
         </div>
-        <span>Explore a selection of my work here - Interact with projects to see my skills in action.</span>
+        <span>{{ 'PORTFOLIO.DESCRIPTION' | translate }}</span>
     </section>
-    <app-portfolio-item *ngFor="let project of projects; let i = index"
-        [index]="i" [projects]="projects"></app-portfolio-item>
+    <app-portfolio-item 
+        *ngFor="let project of projects; let i = index" 
+        [index]="i" 
+        [projects]="projects">
+    </app-portfolio-item>
 </main>

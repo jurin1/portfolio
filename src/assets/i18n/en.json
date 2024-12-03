@@ -1,0 +1,130 @@
+{
+  "HEADER": {
+    "LOGO_ALT": "Logo",
+    "MENU": {
+      "ABOUT_ME": "About Me",
+      "SKILLS": "Skills",
+      "PORTFOLIO": "Portfolio",
+      "CONTACT": "Contact"
+    }
+  },
+
+  "FOOTER": {
+    "LOGO_ALT": "Logo",
+    "IMPRINT": "Imprint",
+    "PRIVACY_POLICY": "Privacy Policy",
+    "COPYRIGHT": "© Juri Neiz 2024",
+    "SOCIAL": {
+      "GITHUB_ALT": "GitHub Profile",
+      "EMAIL_ALT": "Send Email",
+      "LINKEDIN_ALT": "LinkedIn Profile"
+    }
+  },
+
+  "SKILLS": {
+    "TITLE": "My skills",
+    "DESCRIPTION": "I have gained experience in building projects with different frontend technologies and concepts.",
+    "SKILL_LIST": {
+      "ANGULAR": "Angular",
+      "TYPESCRIPT": "TypeScript",
+      "JAVASCRIPT": "JavaScript",
+      "HTML": "HTML",
+      "FIREBASE": "Firebase",
+      "GIT": "GIT",
+      "CSS": "CSS",
+      "REST_API": "Rest-Api",
+      "SCRUM": "Scrum",
+      "MATERIAL_DESIGN": "Material design",
+      "LEARNING": "Continually learning"
+    },
+    "CONTACT_PROMPT": {
+      "TITLE": "Looking for another skill?",
+      "DESCRIPTION": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+      "BUTTON": "Get in touch"
+    }
+  },
+
+  "PORTFOLIO": {
+    "TITLE": "Portfolio",
+    "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
+  },
+
+  "HERO_SECTION": {
+    "UNDER_CONSTRUCTION": "Under Construction",
+    "INTRO": {
+      "IAM": "I am",
+      "NAME": "Juri Neiz",
+      "ROLE": "FRONTEND DEVELOPER"
+    },
+    "CTA_BUTTON": "Let's Talk!",
+    "SOCIAL_LINKS": {
+      "GITHUB_ALT": "GitHub Profile",
+      "EMAIL_ALT": "Send Email",
+      "LINKEDIN_ALT": "LinkedIn Profile"
+    },
+    "EMAIL": "juri@neizcon.de"
+  },
+
+  "CONTACT": {
+    "TITLE": "Contact",
+    "HEADER": "Got a problem to solve?",
+    "DESCRIPTION": {
+      "PART_1": "Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.",
+      "PART_2": "Need a Frontend developer? Contact me!"
+    },
+    "FORM": {
+      "PLACEHOLDER": {
+        "NAME": "Your name",
+        "EMAIL": "Your email",
+        "MESSAGE": "Your message"
+      },
+      "ERRORS": {
+        "NAME_REQUIRED": "Your name is required",
+        "EMAIL_REQUIRED": "Your email is required",
+        "MESSAGE_REQUIRED": "Your message is empty",
+        "POLICY_REQUIRED": "Please accept the privacy policy."
+      },
+      "CHECKBOX": "I've read the <a href='../privacy-policy'>Privacy policy</a> and agree to the processing of my data as outlined.",
+      "BUTTON": "Send message"
+    },
+    "FEEDBACK": {
+      "SENDING": "Your message is being sent...",
+      "SUCCESS": "Your message has been sent!",
+      "SUCCESS_DETAIL": "I will answer you as soon as possible.",
+      "ERROR": "There was a problem sending your message.",
+      "ERROR_DETAIL": "Please try again later."
+    },
+    "ARROW_UP": "Back to top"
+  },
+
+  "ABOUT_ME": {
+    "TITLE": "About me",
+    "INTRO": "Hi, I am a Front End Developer based in Gronau, Germany. I have experience in building webapps with JavaScript and Angular. I would like to further develop my skills and am looking forward to a professional career as a developer. I have responsive web apps, business apps, and a game in my portfolio. Feel free to try them out.",
+    "SECTIONS": {
+      "FIRST": {
+        "ICON_ALT": "Lightbulb icon",
+        "TEXT": "Even as a child I found IT and programming very interesting and bought my first HTML book at the age of 13. Unfortunately, I didn't find an apprenticeship in IT after school and then moved into other industries. Now I have decided to become a programmer to turn my love of technology, IT, and software into a career."
+      },
+      "SECOND": {
+        "ICON_ALT": "Puzzle icon",
+        "TEXT": "Due to my love of IT and programming, I feel at home in the industry. My passion for innovative technologies and my willingness to continuously learn make me a dedicated team member who always strives to find elegant solutions to complex challenges. My understanding of abstract relationships and how computers work makes me the perfect employee."
+      }
+    }
+  },
+  
+  "IMPRINT": {
+    "TITLE": "Impressum",
+    "ADDRESS": {
+      "NAME": "Juri Neiz",
+      "STREET": "Starenstr. 4",
+      "CITY": "48599 Gronau"
+    },
+    "CONTACT": {
+      "TITLE": "Kontakt",
+      "EMAIL": "E-Mail",
+      "PHONE": "Telefon"
+    },
+    "SOURCE": "Quelle: e-recht24.de"
+  }
+}
+

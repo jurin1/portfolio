@@ -1,7 +1,5 @@
 main {
   background-color: #141d2f;
-  margin-top: 104px;
-  width: 100vw;
 
   section {
     display: flex;
@@ -11,7 +9,7 @@ main {
 }
 
 .uc {
-  width: 100%;
+
   position: absolute;
   transform: rotateZ(-25deg);
   top: 302px;
@@ -243,9 +241,6 @@ h3 {
 }
 
 @media (max-width: 1010px) {
-  .hero_right_section{
-    width: 450px;
-  }
   main {
     section {
       padding: 0 50px;
@@ -262,7 +257,7 @@ h3 {
     right: -20px;
   }
   .welcome-txt {
-    margin-right: -45px;
+    // margin-right: -45px;
     h3 {
       br {
         display: inline;
@@ -287,10 +282,16 @@ h3 {
 
 @media (max-width: 860px) {
   main {
+    margin-top: 70px;
     section {
       flex-direction: column;
       padding: 0 24px;
+
     }
+  }
+
+  .vector{
+    top: 430px;
   }
 
   .hero_right_section {
@@ -451,11 +452,11 @@ h3 {
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 19px;
   }
 
   .vector {
-    top: 560px;
+    top: 525px;
     width: 480px;
     height: 200px;
   }
@@ -487,7 +488,7 @@ h3 {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 390px) {
   .welcome-txt {
     h1 {
       font-size: 24px;

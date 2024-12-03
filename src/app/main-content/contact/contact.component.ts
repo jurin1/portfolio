@@ -1,15 +1,29 @@
-import { Component, ElementRef, ViewChild, booleanAttribute } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  ViewChild,
+  booleanAttribute,
+} from '@angular/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { NgIf, NgStyle } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslatePipe } from '../../shared/pipes/translate.pipe';
+
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [MatSlideToggleModule, MatCheckboxModule, NgIf, FormsModule, ReactiveFormsModule],
+  imports: [
+    MatSlideToggleModule,
+    MatCheckboxModule,
+    NgIf,
+    FormsModule,
+    ReactiveFormsModule,
+    TranslatePipe
+  ],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
   img: any;
@@ -51,7 +65,10 @@ export class ContactComponent {
   }
 
   checkEmailEmpty() {
-    if (this.email.nativeElement.value && this.validateEmail(this.email.nativeElement.value)) {
+    if (
+      this.email.nativeElement.value &&
+      this.validateEmail(this.email.nativeElement.value)
+    ) {
       this.emailValue = true;
       this.email.nativeElement.classList.remove('border');
       this.email.nativeElement.style.border = '1px solid #70E61C';
@@ -74,67 +91,65 @@ export class ContactComponent {
     }
   }
 
-activateCheckbox() {
-  const isChecked = this.checkbox.nativeElement.checked;
+  activateCheckbox() {
+    const isChecked = this.checkbox.nativeElement.checked;
 
-  if (isChecked) {
-    this.checkboxActive = true;
-    this.checkbox.nativeElement.style.border = '';
-  } else {
-    this.checkboxActive = false;
-    if (this.checkboxClicked) {
-      this.checkbox.nativeElement.classList.remove('border');
-      this.checkbox.nativeElement.style.border = '1px solid #E61C40'; 
+    if (isChecked) {
+      this.checkboxActive = true;
+      this.checkbox.nativeElement.style.border = '';
+    } else {
+      this.checkboxActive = false;
+      if (this.checkboxClicked) {
+        this.checkbox.nativeElement.classList.remove('border');
+        this.checkbox.nativeElement.style.border = '1px solid #E61C40';
+      }
     }
   }
-}
-
 
   validateEmail(email: string) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-      return (true)
+      return true;
     }
-    return (false)
+    return false;
   }
 
-async sendMail() {
+  async sendMail() {
     this.disableInput();
     this.openDialog();
 
     try {
-        const formData = {
-            name: this.name.nativeElement.value,
-            email: this.email.nativeElement.value,
-            message: this.message.nativeElement.value
-        };
+      const formData = {
+        name: this.name.nativeElement.value,
+        email: this.email.nativeElement.value,
+        message: this.message.nativeElement.value,
+      };
 
-        const response = await fetch('https://formular.neizcon.de/send_mail', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData)
-        });
+      const response = await fetch('https://formular.neizcon.de/send_mail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
-        this.sendingMail = false;
+      this.sendingMail = false;
 
-        if (!response.ok) {
-            throw new Error(`Server error: ${response.status}`);
-        }
+      if (!response.ok) {
+        throw new Error(`Server error: ${response.status}`);
+      }
 
-        this.mailSuccess = true;
-        console.log('Nachricht erfolgreich gesendet');
+      this.mailSuccess = true;
+      console.log('Nachricht erfolgreich gesendet');
     } catch (error) {
-        this.sendingMail = false;
-        this.mailError = true;
-        console.error('Fehler beim Senden der Nachricht:', error);
+      this.sendingMail = false;
+      this.mailError = true;
+      console.error('Fehler beim Senden der Nachricht:', error);
     } finally {
-        setTimeout(() => {
-            this.enableInput();
-            this.clearInput();
-            this.dialogOpen = false;
-        }, 5000);
+      setTimeout(() => {
+        this.enableInput();
+        this.clearInput();
+        this.dialogOpen = false;
+      }, 5000);
     }
-}
-
+  }
 
   disableInput() {
     this.name.nativeElement.disabled = true;

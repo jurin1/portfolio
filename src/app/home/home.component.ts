@@ -5,6 +5,8 @@ import { PortfolioComponent } from '../main-content/portfolio/portfolio.componen
 import { SkillsComponent } from '../main-content/skills/skills.component';
 import { ContactComponent } from '../main-content/contact/contact.component';
 
+
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -13,7 +15,7 @@ import { ContactComponent } from '../main-content/contact/contact.component';
     AboutMeComponent,
     PortfolioComponent,
     SkillsComponent,
-    ContactComponent,],
+    ContactComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

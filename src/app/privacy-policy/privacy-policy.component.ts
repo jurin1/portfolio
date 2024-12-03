@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TranslatePipe } from '../shared/pipes/translate.pipe';
+
+
+
 
 @Component({
   selector: 'app-privacy-policy',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [TranslatePipe],
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss'
 })

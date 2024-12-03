@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 import { CommonModule, NgFor, NgForOf } from '@angular/common';
+import { TranslatePipe } from '../../shared/pipes/translate.pipe';
+
+
 
 @Component({
   selector: 'app-portfolio',
@@ -11,6 +14,7 @@ import { CommonModule, NgFor, NgForOf } from '@angular/common';
     NgForOf,
     CommonModule,
     PortfolioItemComponent,
+    TranslatePipe
   ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',

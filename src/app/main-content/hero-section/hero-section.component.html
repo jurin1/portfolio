@@ -1,34 +1,37 @@
 <main>
   <div>
-    <h4 class="uc">Under Construction</h4>
+    <h4 class="uc">{{ 'HERO_SECTION.UNDER_CONSTRUCTION' | translate }}</h4>
   </div>
   <section>
     <div class="image-container">
       <img
         src="assets/img/personal_picture/BusinessProfil.png"
         class="personal-img"
+        alt="{{ 'HERO_SECTION.INTRO.NAME' | translate }}"
       />
       <img
         src="assets/img/background/purple_shadow.png"
         class="img-background img-left"
+        alt="Purple shadow"
       />
       <img
         src="assets/img/background/green_shadow.png"
         class="img-background img-right"
+        alt="Green shadow"
       />
     </div>
 
     <div class="hero_right_section">
       <div class="welcome-txt">
         <div class="rotate">
-          <h1>I am</h1>
+          <h1>{{ 'HERO_SECTION.INTRO.IAM' | translate }}</h1>
         </div>
         <div>
-          <h2>Juri Neiz</h2>
-          <h3>FRONTEND <br />DEVELOPER</h3>
+          <h2>{{ 'HERO_SECTION.INTRO.NAME' | translate }}</h2>
+          <h3>{{ 'HERO_SECTION.INTRO.ROLE' | translate }}</h3>
         </div>
       </div>
-      <a href="#contact" class="button"><span>Lets Talk!</span></a>
+      <a href="#contact" class="button"><span>{{ 'HERO_SECTION.CTA_BUTTON' | translate }}</span></a>
     </div>
   </section>
   <div class="bottom-container">
@@ -38,23 +41,25 @@
         href="https://github.com/jurin1?tab=repositories"
         target="_blank"
         rel="noreferrer noopener"
-        ><img src="assets/img/above_default/git-hub.png"
-      /></a>
-      <a href="mailto:juri@neizcon.de"
-        ><img src="assets/img/above_default/e-mail.png"
-      /></a>
+      >
+        <img src="assets/img/above_default/git-hub.png" alt="{{ 'HERO_SECTION.SOCIAL_LINKS.GITHUB_ALT' | translate }}" />
+      </a>
+      <a href="mailto:juri@neizcon.de">
+        <img src="assets/img/above_default/e-mail.png" alt="{{ 'HERO_SECTION.SOCIAL_LINKS.EMAIL_ALT' | translate }}" />
+      </a>
       <a
         href="https://www.linkedin.com/in/juri-n-97b8a3168/"
         target="_blank"
         rel="noreferrer noopener"
-        ><img src="assets/img/above_default/linked-in.png"
-      /></a>
-      <a href="#contact" class="mail">juri&#064;neizcon.de</a>
+      >
+        <img src="assets/img/above_default/linked-in.png" alt="{{ 'HERO_SECTION.SOCIAL_LINKS.LINKEDIN_ALT' | translate }}" />
+      </a>
+      <a href="#contact" class="mail">{{ 'HERO_SECTION.EMAIL' | translate }}</a>
     </div>
     <!-- <div class="scroll-down">
       <span>Scroll down</span>
       <img src="assets/img/above_default/arrow-down-line.png" />
     </div> -->
   </div>
-  <img src="assets/img/background/Vector.png" class="vector" />
+  <img src="assets/img/background/Vector.png" class="vector" alt="Vector background" />
 </main>

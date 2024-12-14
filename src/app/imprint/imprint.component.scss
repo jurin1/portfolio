@@ -1,8 +1,10 @@
 main {
-    margin-top: 107.61px;
-    padding: 100px;
-    background-color: #141D2F;
+    margin-top: 200px;
+    height: 100vh;
+    width: 100vw;
     color: #FFFFFF;
+    max-width: 1440px;
+    margin-left: 50px;
 }
 
 h1 {
@@ -10,7 +12,6 @@ h1 {
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%;
     margin-bottom: 16px;
 }
 
@@ -28,21 +29,7 @@ a {
      
 }
 
-.imprint {
-    position: relative;
-    z-index: 1;
-}
 
-.bg-green {
-    position: absolute;
-    top: 80px;
-    right: -400px;
-    z-index: 0;
-}
 
-.bg-purple {
-    position: absolute;
-    top: 320px;
-    left: -440px;
-    z-index: 0;
-}
+
+

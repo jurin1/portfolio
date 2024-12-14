@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { TranslatePipe } from '../shared/pipes/translate.pipe';
 
 

@@ -1,11 +1,12 @@
 main {
   position: relative;
   display: flex;
-  width: 100%;
+  // width: 100%;
   gap: 100px;
-  padding: 148px 100px 0 100px;
+  padding: 148px 0px 0px 15px;
   background-color: #141d2f;
   z-index: 10;
+  max-width: 1440px;
 }
 
 h1 {
@@ -115,32 +116,18 @@ li {
 
 /* Ultrawide*/
 @media (min-width: 2800px){
-  main {
-    gap: 10%;
-  }
 
-  .about{
-    margin-left: 15%;
-  }
-
-  .about-me-img{
-    width: 63%;
-  }
-
-  .line{
-    top: 46%;
-  }
 
 }
 
 @media (max-width: 1510px) {
-  .line {
-    top: 35%;
-  }
+
 }
 
-@media (max-width: 1400px) {
-
+@media (min-width: 1440px) {
+main{
+padding: 100px 0px 100px 0px;
+}
 }
 
 @media (max-width: 1228px) {
@@ -165,24 +152,30 @@ li {
     font-size: 48px;
   }
 
-  .line {
-    width: 80px;
-  }
-
+.line{
+  top: 26%;
+}
   .circle {
-    right: 220px;
+    right: 180px;
   }
 }
 
-@media (max-width: 918px) {
+@media (max-width: 1000px) {
+  .circle {
+    right: 220px;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 950px) {
   main {
-    padding: 148px 50px 0 50px;
+    padding: 148px 0px 0 50px;
   }
 
-  .line {
-    width: 50px;
-  }
-
+.line {
+  top: 20%;
+}
 }
 
 @media (max-width: 850px) {

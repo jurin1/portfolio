@@ -1,6 +1,7 @@
 main {
   background-color: #141d2f;
   padding-bottom: 50px;
+  max-width: 1440px;
 }
 
 .section-form {
@@ -373,9 +374,12 @@ button {
   }
 }
 
-@media (max-width: 1393px) {
+@media (min-width: 1440px) {
   h1 {
     font-size: 80px;
+  }
+  .section-form{
+    width: 100%;
   }
 }
 

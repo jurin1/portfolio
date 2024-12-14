@@ -1,5 +1,5 @@
 main {
-    margin-top: 107px;
+    margin-top: 80px;
     padding: 100px;
     background-color: #141D2F;
     color: #FFFFFF;
@@ -7,7 +7,7 @@ main {
     font-style: normal;
     line-height: 120%;
     position: relative;
-
+    max-width: 1440px;
     div {
         position: relative;
         z-index: 1;
@@ -48,3 +48,14 @@ a {
     right: 40px;
 }
 
+@media (min-width: 2800px) {
+    main {
+        height: 1800px;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 50px 25px;
+    }
+}

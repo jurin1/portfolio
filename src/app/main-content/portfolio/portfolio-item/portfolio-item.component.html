@@ -1,13 +1,14 @@
 <section [ngClass]="{'reverse': index % 2 === 1}">
-    <h1>{{ projects[index].titel }}</h1>
-    <h2>{{ projects[index].Languages }}</h2>
-    <span>{{ projects[index].describtion }}</span>
-    <div>
-        <a href="{{ projects[index].test }}" target="_blank"
-            rel="noreferrer noopener"><button class="live-test"><span>Live
-                test</span></button></a>
-        <a href="{{ projects[index].github }}" target="_blank"
-            rel="noreferrer noopener"><button class="github"><span>Github</span></button></a>
-    </div>
+  <h1>{{ projects[index].titel }}</h1>
+  <h2>{{ projects[index].Languages }}</h2>
+  <span>{{ getDescription(projects[index].describtion) }}</span>
+  <div>
+    <a href="{{ projects[index].link }}" target="_blank" rel="noreferrer noopener">
+      <button class="live-test"><span>Live test</span></button>
+    </a>
+    <a href="{{ projects[index].github }}" target="_blank" rel="noreferrer noopener">
+      <button class="github"><span>Github</span></button>
+    </a>
+  </div>
 </section>
-<img src="{{ projects[index].image }}" id="img{{ index }}">
+<img [src]="projects[index].image" alt="Image for {{ projects[index].titel }}">

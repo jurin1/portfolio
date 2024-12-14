@@ -1,12 +1,25 @@
 main {
   position: relative;
-  padding: 148px 60px 0 100px;
+  padding: 148px 0px 0 15px;
   background-color: #141d2f;
   display: flex;
   justify-content: space-between;
   gap: 48px;
+  max-width: 1440px;
 }
 
+.header{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.line {
+  width: 25%;
+  height: 0px;
+  border: 2px solid rgba(151, 71, 255, 1);
+  position: absolute;
+  right: 0;
+}
 h1 {
   color: #ffffff;
   font-family: Poppins;
@@ -110,6 +123,7 @@ p {
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   transition: transform 300ms ease-out;
+  // width: 50%;
 
   span {
     color: #ffffff;
@@ -133,15 +147,7 @@ p {
   }
 }
 
-.line {
-  width: 58px;
-  height: 0px;
-  flex-shrink: 0;
-  border: 2px solid rgba(151, 71, 255, 1);
-  position: absolute;
-  right: 0;
-  top: 240px;
-}
+
 
 section {
   position: relative;
@@ -161,30 +167,13 @@ section {
 }
 
 /* Ultrawide*/
-@media (min-width: 3040px) and (min-height: 2000px) {
-  main{
-    justify-content: space-around;
-  }
-  .line{
-    width: 17%;
-  }
+@media (min-width: 1440px) {
+main{
+  padding: 100px 0px 100px 0px;
+}
 }
 
-@media (max-width: 1302px) {
-  h1 {
-    font-size: 72px;
-  }
 
-
-  .icon-container {
-    gap: 80px;
-    width: 592px;
-  }
-
-  .line {
-    top: 226px;
-  }
-}
 
 @media (max-width: 1228px) {
   h1 {
@@ -195,9 +184,6 @@ section {
     right: 160px;
   }
 
-  .line {
-    top: 222px;
-  }
 }
 
 @media (max-width: 1150px) {
@@ -214,9 +200,7 @@ section {
     width: 532px;
   }
 
-  .line {
-    top: 216px;
-  }
+
 }
 
 @media (max-width: 1075px) {
@@ -238,9 +222,6 @@ section {
     padding: 148px 50px 0 50px;
   }
 
-  .line {
-    width: 28px;
-  }
 }
 
 @media (max-width: 850px) {
@@ -262,7 +243,6 @@ section {
 
   .line {
     width: 16px;
-    top: 175px;
   }
 
   .get-in-touch{

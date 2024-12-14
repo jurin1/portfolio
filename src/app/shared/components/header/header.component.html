@@ -1,4 +1,5 @@
 <main>
+  <header>
   <a href="#home" class="logo"
     ><img src="assets/img/logo/logo_full.png" (click)="resetSelected()"
   /></a>
@@ -10,7 +11,7 @@
         (mouseleave)="aboutMe = false"
         (click)="selectItem('aboutMe')"
         [class.selected]="selectedItem === 'aboutMe'"
-        >About Me</a
+        >{{ 'HEADER.MENU.ABOUT_ME' | translate }}</a
       >
       <div
         class="underline"
@@ -56,13 +57,18 @@
     #menuButton
     (click)="openMenu()"
   />
-  <aside class="dialog-menu hide-menu" #menuDialog>
+  </header>
+    <aside   >
+    <div #menuDialog class="dialog-menu ">
     <img src="assets/img/logo/logo_full.png" />
     <section>
-      <a href="#aboutMe" (click)="openMenu()">About Me</a>
+      <button (click)="switchLanguage()">{{ buttonText }}</button>
+      <a href="#aboutMe" (click)="openMenu()">{{ 'HEADER.MENU.ABOUT_ME' | translate }}</a>
       <a href="#skills" (click)="openMenu()">Skills</a>
       <a href="#portfolio" (click)="openMenu()">Portfolio</a>
-      <a href="#contact" (click)="openMenu()">Contact</a>
+      <a href="#contact" (click)="openMenu()">{{ 'HEADER.MENU.CONTACT' | translate }}</a>
     </section>
+    </div>
+
   </aside>
 </main>

@@ -3,6 +3,7 @@ main {
   padding: 177px 0 93px 0;
   background-color: #141d2f;
   position: relative;
+  max-width: 1440px;
 }
 
 section {
@@ -10,15 +11,7 @@ section {
   z-index: 2;
 }
 
-h1 {
-  color: #ffffff;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 90px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
-}
+
 
 span {
   color: #ffffff;
@@ -45,17 +38,28 @@ section {
   }
 }
 
+.portfolio-header{
+  width: 100%;
+}
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  }
+
 .left-line {
-  width: 20px;
+width: 20%;
   height: 0px;
-  flex-shrink: 0;
   border: 2px solid rgba(151, 71, 255, 1);
 }
 
 .right-line {
-  width: 484px;
+
   height: 0px;
-  flex-shrink: 0;
   border: 2px solid rgba(151, 71, 255, 1);
 }
 
@@ -94,90 +98,8 @@ app-portfolio-item {
   z-index: 1;
 }
 
-@media (min-width: 2800px) {
-  main {
-    padding: 477px 0 393px 0;
-  }
 
-  app-portfolio-item {
-    padding: 0 0px 150px 0px;
-    gap: 0;
-  }
-
-  h1 {
-    font-size: 120px;
-  }
-
-  span {
-    font-size: 24px;
-  }
-
-  section {
-    gap: 24px;
-    padding-bottom: 160px;
-  }
-
-  .shadow-1 {
-    height: 2000px;
-    top: 1137px;
-    left: -634px;
-  }
-
-  .shadow-2 {
-    height: 2000px;
-    bottom: -510px;
-    right: -960px;
-  }
-}
-
-@media (min-width: 2450px) and (max-width: 2799px) {
-  main {
-    padding: 377px 0 293px 0;
-  }
-
-  app-portfolio-item {
-    padding: 0 350px 150px 350px;
-    gap: 0;
-  }
-
-  h1 {
-    font-size: 120px;
-  }
-
-  span {
-    font-size: 24px;
-  }
-
-  section {
-    gap: 24px;
-    padding-bottom: 160px;
-  }
-
-  .shadow-1 {
-    height: 2000px;
-    top: 1137px;
-    left: -634px;
-  }
-
-  .shadow-2 {
-    height: 2000px;
-    bottom: -510px;
-    right: -960px;
-  }
-}
-
-@media (min-width: 2050px) and (max-width: 2449px) {
-  main {
-    padding: 277px 0 193px 0;
-  }
-
-  app-portfolio-item {
-    padding: 0 250px 150px 250px;
-    gap: 0;
-  }
-}
-
-@media (max-width: 1393px) {
+@media (min-width: 1440px) {
   h1 {
     font-size: 80px;
   }
@@ -185,6 +107,10 @@ app-portfolio-item {
   .shadow-1 {
     width: 640px;
   }
+app-portfolio-item {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 }
 
 @media (max-width: 1302px) {
@@ -253,4 +179,11 @@ app-portfolio-item {
     right: unset;
     left: 160px;
   }
+}
+
+@media(max-width: 570px){
+  app-portfolio-item {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
 }

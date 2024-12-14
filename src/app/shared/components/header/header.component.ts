@@ -1,10 +1,11 @@
 import { Component, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 import { TranslationService } from '../../../translation.service';
+import { TranslatePipe } from '../../../shared/pipes/translate.pipe';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -63,17 +64,16 @@ export class HeaderComponent {
 
     if (this.menuOpen) {
       this.startImgAnimationOpen();
-      this.toggleMenuClasses('hide-menu', 'show-menu');
+      this.toggleMenuClasses('flex');
     } else {
       this.startImgAnimationClose();
-      this.toggleMenuClasses('show-menu', 'hide-menu');
+      this.toggleMenuClasses('none');
     }
   }
 
-  private toggleMenuClasses(removeClass: string, addClass: string): void {
-    this.renderer.removeClass(this.menuDialog.nativeElement, removeClass);
-    this.renderer.addClass(this.menuDialog.nativeElement, addClass);
-  }
+private toggleMenuClasses(displayValue: string): void {
+  this.renderer.setStyle(this.menuDialog.nativeElement, 'display', displayValue);
+}
 
   startImgAnimationOpen() {
     let interval = setInterval(() => {

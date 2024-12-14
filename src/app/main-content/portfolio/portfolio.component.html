@@ -1,15 +1,15 @@
 <main>
     <section>
-        <div>
+        <div class="portfolio-header">
             <div class="left-line"></div>
             <h1 id="headline">{{ 'PORTFOLIO.TITLE' | translate }}</h1>
             <div class="right-line" id="rightLine"></div>
         </div>
-        <span>{{ 'PORTFOLIO.DESCRIPTION' | translate }}</span>
     </section>
     <app-portfolio-item 
         *ngFor="let project of projects; let i = index" 
         [index]="i" 
         [projects]="projects">
+        <!-- [getDescription]="getDescription"> -->
     </app-portfolio-item>
 </main>

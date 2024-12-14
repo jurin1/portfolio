@@ -113,18 +113,107 @@
   },
   
   "IMPRINT": {
-    "TITLE": "Impressum",
+    "TITLE": "Imprint",
     "ADDRESS": {
       "NAME": "Juri Neiz",
       "STREET": "Starenstr. 4",
       "CITY": "48599 Gronau"
     },
     "CONTACT": {
-      "TITLE": "Kontakt",
+      "TITLE": "Contact",
       "EMAIL": "E-Mail",
-      "PHONE": "Telefon"
+      "PHONE": "Phone"
     },
-    "SOURCE": "Quelle: e-recht24.de"
-  }
+    "SOURCE": "Source: e-recht24.de"
+  },
+
+  "PRIVACY_POLICY": {
+    "TITLE": "Privacy Policy",
+    "SECTIONS": {
+        "1": {
+            "TITLE": "1. Data Protection Overview",
+            "SUBSECTIONS": {
+                "1": {
+                    "TITLE": "General Information",
+                    "CONTENT": "The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is all data that can personally identify you. Detailed information on data protection can be found in our privacy policy listed below this text."
+                },
+                "2": {
+                    "TITLE": "Data Collection on This Website",
+                    "QUESTIONS": {
+                        "1": {
+                            "QUESTION": "Who is responsible for data collection on this website?",
+                            "ANSWER": "Data processing on this website is carried out by the website operator. You can find the operator’s contact details in the “Notice on the Responsible Party” section of this privacy policy."
+                        },
+                        "2": {
+                            "QUESTION": "How do we collect your data?",
+                            "ANSWER": "Your data is collected when you provide it to us, for example, by filling out a contact form. Other data is automatically collected by our IT systems when you visit the website. This includes technical data (e.g., internet browser, operating system, or time of page access). This data is collected automatically as soon as you enter the website."
+                        },
+                        "3": {
+                            "QUESTION": "What do we use your data for?",
+                            "ANSWER": "Part of the data is collected to ensure the error-free provision of the website. Other data may be used to analyze your user behavior."
+                        },
+                        "4": {
+                            "QUESTION": "What rights do you have regarding your data?",
+                            "ANSWER": "You have the right to receive information free of charge at any time about the origin, recipient, and purpose of your stored personal data. You also have the right to request the correction or deletion of this data. If you have given consent for data processing, you can revoke this consent at any time for the future. Additionally, you have the right to request the restriction of the processing of your personal data under certain circumstances. Furthermore, you have the right to file a complaint with the relevant supervisory authority."
+                        }
+                    }
+                }
+            }
+        },
+        "2": {
+            "TITLE": "2. Hosting",
+            "CONTENT": "We host the content of our website with the following provider:",
+            "SUBSECTIONS": {
+                "1": {
+                    "TITLE": "External Hosting",
+                    "CONTENT": "This website is externally hosted. The personal data collected on this website is stored on the host’s servers. This can include IP addresses, contact inquiries, metadata, communication data, contract data, contact details, names, website accesses, and other data generated through a website. External hosting is carried out for the purpose of fulfilling contracts with our potential and existing customers (Art. 6 para. 1 lit. b GDPR) and in the interest of the secure, fast, and efficient provision of our online offer by a professional provider (Art. 6 para. 1 lit. f GDPR)."
+                },
+                "2": {
+                    "TITLE": "Data Processing Agreement",
+                    "CONTENT": "We have entered into a data processing agreement (DPA) to use the above service. This is a data protection legally required agreement that ensures the provider processes personal data of our website visitors only according to our instructions and in compliance with the GDPR."
+                }
+            }
+        },
+        "3": {
+            "TITLE": "3. General Notes and Mandatory Information",
+            "SUBSECTIONS": {
+                "1": {
+                    "TITLE": "Data Protection",
+                    "CONTENT": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy."
+                },
+                "2": {
+                    "TITLE": "Notice on the Responsible Party",
+                    "CONTENT": "The responsible party for data processing on this website is: Juri Neiz, Starenstr. 4, 48599 Gronau, Phone: +4925621889158, Email: juri@neizcon.de."
+                },
+                "3": {
+                    "TITLE": "Retention Period",
+                    "CONTENT": "Unless a specific retention period is mentioned within this privacy policy, your personal data will remain with us until the purpose for data processing ceases to exist."
+                },
+                "4": {
+                    "TITLE": "Revocation of Your Consent to Data Processing",
+                    "CONTENT": "Many data processing operations are only possible with your explicit consent. You can revoke a previously given consent at any time. The legality of the data processing carried out until the revocation remains unaffected by the revocation."
+                },
+                "5": {
+                    "TITLE": "Right to Object to Data Collection",
+                    "CONTENT": "If data processing is based on Art. 6 para. 1 lit. e or f GDPR, you have the right to object to the processing of your personal data at any time for reasons arising from your particular situation."
+                }
+            }
+        },
+        "4": {
+            "TITLE": "4. Data Collection on This Website",
+            "SUBSECTIONS": {
+                "1": {
+                    "TITLE": "Contact Form",
+                    "CONTENT": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and for follow-up questions."
+                },
+                "2": {
+                    "TITLE": "Inquiry by Email, Phone, or Fax",
+                    "CONTENT": "If you contact us by email, phone, or fax, your inquiry, including all resulting personal data (name, inquiry), will be stored and processed by us for the purpose of handling your request."
+                }
+            }
+        }
+    }
+}
+
 }
 

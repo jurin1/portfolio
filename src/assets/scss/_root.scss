@@ -3,10 +3,10 @@
 :root, 
 [data-bs-theme=dark] {
 
-	--px-theme:	#{$px-theme};
-	--px-theme-rgb:	#{$px-theme-rgb};
-	--px-black:	#{$px-black};
-	--px-white:	#{$px-white};
-	--px-text:	#{$px-text};
+	--varCss-theme:	#{$varCss-theme};
+	--varCss-theme-rgb:	#{$varCss-theme-rgb};
+	--varCss-black:	#{$varCss-black};
+	--varCss-white:	#{$varCss-white};
+	--varCss-text:	#{$varCss-text};
 }
 

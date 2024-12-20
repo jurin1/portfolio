@@ -1,9 +1,9 @@
 /* Background
 -------------------------------*/
 body {
-  background-color: var(--px-bg);
-  color: var(--px-text);
-  font-family: $px-font;
+  background-color: var(--varCss-bg);
+  color: var(--varCss-text);
+  font-family: $varCss-font;
   --bs-body-font-weight: 400;
   --bs-body-font-size: 1rem;
   --bs-body-line-height: 1.6;
@@ -57,13 +57,13 @@ a {
     width: 10px;
     height: 10px;
     background: transparent;
-    border: 1px solid var(--px-white);
+    border: 1px solid var(--varCss-white);
     transition: ease all 0.55s;
     border-radius: 8px;
     margin: 0 4px;
 
     &.active {
-      background: var(--px-theme);
+      background: var(--varCss-theme);
       width: 20px;
     }
   }
@@ -86,8 +86,8 @@ a {
     margin: auto;
     width: 35px;
     height: 35px;
-    background: var(--px-theme);
-    color: var(--px-theme-text);
+    background: var(--varCss-theme);
+    color: var(--varCss-theme-text);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -96,8 +96,8 @@ a {
     transition: ease all 0.35s;
 
     &:hover {
-      background: var(--px-theme-text);
-      color: var(--px-theme);
+      background: var(--varCss-theme-text);
+      color: var(--varCss-theme);
     }
   }
 
@@ -119,7 +119,7 @@ a {
 }
 
 /* ----------------------
-*   Home Banner
+*   Home
 ---------------------------*/
 .home-section {
   position: relative;
@@ -137,11 +137,11 @@ a {
     h6 {
       margin: 0 0 10px;
       span {
-        background: rgba(var(--px-theme-rgb), 0.2);
+        background: rgba(var(--varCss-theme-rgb), 0.2);
         border-radius: 4px;
         padding: 5px 12px;
         display: inline-block;
-        color: var(--px-white);
+        color: var(--varCss-white);
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
@@ -150,7 +150,7 @@ a {
       }
     }
     h1 {
-      color: var(--px-white);
+      color: var(--varCss-white);
       font-weight: 700;
       font-size: 70px;
       text-transform: uppercase;
@@ -162,7 +162,7 @@ a {
       }
     }
     h2 {
-      color: var(--px-theme);
+      color: var(--varCss-theme);
       font-weight: 700;
       font-size: 70px;
       text-transform: uppercase;
@@ -181,7 +181,7 @@ a {
       font-size: 20px;
       line-height: 150%;
       letter-spacing: 0.01em;
-      color: var(--px-white);
+      color: var(--varCss-white);
       @include down-lg {
         font-size: 18px;
       }
@@ -235,7 +235,7 @@ a {
       margin-bottom: 25px;
     }
     p {
-      color: var(--px-white);
+      color: var(--varCss-white);
     }
   }
 }
@@ -398,108 +398,9 @@ align-items: center;
     }
 }
 
-/* ----------------------
-*   EXPERIENCE
----------------------------*/
-.ex-box {
-  background: rgba(var(--px-theme-rgb), 0.1);
-  padding: 25px;
-  border-radius: 10px;
-  .ex-left {
-    padding: 20px;
-    border-radius: 8px;
-    background: var(--px-theme);
-    h4 {
-      margin: 0 0 8px;
-      font-weight: 700;
-    }
-    span {
-      font-weight: 400;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: var(--px-white);
-      opacity: 0.8;
-    }
-    p {
-      font-weight: 400;
-      font-size: 16px;
-      color: var(--px-white);
-      text-transform: uppercase;
-      margin: 0 0 15px;
-    }
-    label {
-      padding: 8px 16px;
-      border-radius: 30px;
-      background: var(--px-white);
-      color: var(--px-black);
-      font-size: 12px;
-      text-transform: uppercase;
-      line-height: 1;
-      font-weight: 600;
-    }
-  }
-  .ex-right {
-    h5 {
-      font-weight: 700;
-      font-size: 32px;
-      @include down-sm {
-        font-size: 28px;
-      }
-    }
-    p {
-      color: var(--px-white);
-      opacity: 0.8;
-    }
-  }
-}
 
 /* ----------------------
-*   Testimonials
----------------------------*/
-.testimonial-box {
-  max-width: 780px;
-  margin: 0 auto;
-  text-align: center;
-  .t-user {
-    width: 130px;
-    height: 130px;
-    display: flex;
-    margin: 0 auto 30px;
-    border-radius: 50%;
-    border: 8px solid rgba(255, 255, 255, 0.2);
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-  }
-  .t-text {
-    margin-bottom: 25px;
-    font-weight: 500;
-    font-size: 18px;
-    color: var(--px-white);
-  }
-  .t-person {
-    h6 {
-      font-weight: 500;
-      font-size: 20px;
-      text-transform: uppercase;
-      margin: 0 0 8px;
-    }
-    span {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      text-align: center;
-      color: var(--px-white);
-      opacity: 0.5;
-    }
-  }
-}
-
-/* ----------------------
-*   Contact Us
+*   Contact
 ---------------------------*/
 .contactus-section {
   .contactus-title {
@@ -513,7 +414,7 @@ align-items: center;
     p {
       font-weight: 400;
       font-size: 17px;
-      color: var(--px-white);
+      color: var(--varCss-white);
       max-width: 550px;
     }
   }
@@ -538,14 +439,14 @@ align-items: center;
       label {
         font-weight: 400;
         font-size: 12px;
-        color: var(--px-white);
+        color: var(--varCss-white);
         margin: 0 0 2px;
         text-transform: uppercase;
         letter-spacing: 2px;
         opacity: 0.75;
       }
       a {
-        color: var(--px-white);
+        color: var(--varCss-white);
         font-size: 22px;
         font-weight: 600;
       }
@@ -553,11 +454,11 @@ align-items: center;
   }
 
   .contactus-box {
-    border: 1px solid rgba(var(--px-theme-rgb), 0.2);
+    border: 1px solid rgba(var(--varCss-theme-rgb), 0.2);
   }
   .contact-form {
     .form-label {
-      color: var(--px-white);
+      color: var(--varCss-white);
       margin: 0 0 4px;
       font-size: 12px;
       text-transform: uppercase;
@@ -567,7 +468,7 @@ align-items: center;
     .form-control {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid #9747ff;
-      color: var(--px-white);
+      color: var(--varCss-white);
       box-shadow: none;
       padding: 0.575rem 0.75rem;
       &::-webkit-input-placeholder {
@@ -605,8 +506,8 @@ align-items: center;
   }
 
   .contactus-form {
-    border-top: 1px solid rgba(var(--px-theme-rgb), 0.2);
-    background: rgba(var(--px-theme-rgb), 0.1);
+    border-top: 1px solid rgba(var(--varCss-theme-rgb), 0.2);
+    background: rgba(var(--varCss-theme-rgb), 0.1);
   }
 }
 

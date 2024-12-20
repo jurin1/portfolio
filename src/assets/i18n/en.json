@@ -2,6 +2,7 @@
   "HEADER": {
     "LOGO_ALT": "Logo",
     "MENU": {
+      "HOME": "Home",
       "ABOUT_ME": "About Me",
       "SKILLS": "Skills",
       "PORTFOLIO": "Portfolio",
@@ -22,7 +23,7 @@
   },
 
   "SKILLS": {
-    "TITLE": "My skills",
+    "TITLE": "Skill set",
     "DESCRIPTION": "I have gained experience in building projects with different frontend technologies and concepts.",
     "SKILL_LIST": {
       "ANGULAR": "Angular",
@@ -46,15 +47,18 @@
 
   "PORTFOLIO": {
     "TITLE": "Portfolio",
-    "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
+    "DESCRIPTION_JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "DESCRIPTION_POCO": "A simple Jump-and-Run game based on an object-oriented approach. Help pepe to find coins and bottles to fight against the killer chicken."
   },
 
-  "HERO_SECTION": {
+  "HOME_SECTION": {
     "UNDER_CONSTRUCTION": "Under Construction",
     "INTRO": {
-      "IAM": "I am",
+      "IAM": "Hi! I’m",
+      "IAM_A": "I’m a",
       "NAME": "Juri Neiz",
-      "ROLE": "FRONTEND DEVELOPER"
+      "ROLE": "FRONTEND DEVELOPER",
+      "CONTACT": "get in touch"
     },
     "CTA_BUTTON": "Let's Talk!",
     "SOCIAL_LINKS": {
@@ -74,17 +78,22 @@
     },
     "FORM": {
       "PLACEHOLDER": {
-        "NAME": "Your name",
-        "EMAIL": "Your email",
-        "MESSAGE": "Your message"
+        "NAME": "Name *",
+        "EMAIL": "Email *",
+        "MESSAGE": "Your message *",
+        "SUBJECT": "Subject *"
       },
       "ERRORS": {
         "NAME_REQUIRED": "Your name is required",
         "EMAIL_REQUIRED": "Your email is required",
         "MESSAGE_REQUIRED": "Your message is empty",
-        "POLICY_REQUIRED": "Please accept the privacy policy."
+        "POLICY_REQUIRED": "Please accept the privacy policy.",
+        "EMAIL_INVALID": "Please enter a valid email address",
+        "SUBJECT_REQUIRED": "Please enter a subject",
+        "CHECKBOX": "You have to accept the privacy policy"
       },
-      "CHECKBOX": "I've read the <a href='../privacy-policy'>Privacy policy</a> and agree to the processing of my data as outlined.",
+      "CHECKBOX": "I've read the <a href='../privacy-policy' target='_blank'>Privacy policy</a> and agree to the processing of my data as outlined.",
+
       "BUTTON": "Send message"
     },
     "FEEDBACK": {
@@ -92,7 +101,7 @@
       "SUCCESS": "Your message has been sent!",
       "SUCCESS_DETAIL": "I will answer you as soon as possible.",
       "ERROR": "There was a problem sending your message.",
-      "ERROR_DETAIL": "Please try again later."
+      "ERROR_DETAIL": "Please try again later or send an email to "
     },
     "ARROW_UP": "Back to top"
   },

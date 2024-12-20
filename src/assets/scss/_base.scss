@@ -21,7 +21,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    //background: $px-theme;
+    //background: $varCss-theme;
     z-index: 99999;
 }
 
@@ -64,10 +64,10 @@ img {
 
 
 .gray-bg {
-    background: rgba(var(--px-theme-rgb), 0.1);
+    background: rgba(var(--varCss-theme-rgb), 0.1);
 }
 .theme-bg {
-    background: var(--px-theme);
+    background: var(--varCss-theme);
 }
 
 /* Section
@@ -103,15 +103,15 @@ img {
         margin: 0 0 10px;
         font-size: 16px;
         font-weight: 400;
-        color: var(--px-text);
+        color: var(--varCss-text);
         text-transform: uppercase;
         letter-spacing: 2px;
         span {
-            background: rgba(var(--px-theme-rgb), 0.2);
+            background: rgba(var(--varCss-theme-rgb), 0.2);
             border-radius: 4px;
             padding: 5px 12px;
             display: inline-block;
-            color: var(--px-white);
+            color: var(--varCss-white);
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
@@ -125,7 +125,7 @@ img {
         font-size: 40px;
         text-transform: uppercase;
         span {
-            color: var(--px-theme);
+            color: var(--varCss-theme);
         }
         @include down-sm {
             font-size: 35px;
@@ -143,17 +143,17 @@ img {
     backdrop-filter: saturate(180%) blur(8px);
 }
 
-.px-modal {
+.varCss-modal {
     max-width: 1200px;
     margin: 30px auto;
     padding: 30px;
-    background-color: var(--px-white);
+    background-color: var(--varCss-white);
     position: relative;
     .btn-close {
         position: absolute;
         top: -25px;
         right: -25px;
-        color: var(--px-text);
+        color: var(--varCss-text);
         z-index: 1;
         opacity: 1;
     }
@@ -183,6 +183,6 @@ img {
         margin-bottom: 12px;
         padding-bottom: 12px;
         border-bottom: 1px solid #eee;
-        color: var(--px-theme-rgb);
+        color: var(--varCss-theme-rgb);
     }
 }

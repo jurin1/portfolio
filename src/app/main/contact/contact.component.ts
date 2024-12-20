@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, } from '@angular/forms';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -7,19 +8,23 @@ import { FormBuilder, FormGroup, Validators, } from '@angular/forms';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  sanitizedCheckboxText: SafeHtml;
   form: FormGroup;
   showPopup = false;
   popupType = "success";
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private sanitizer: DomSanitizer) {
+    this.sanitizedCheckboxText = this.sanitizer.bypassSecurityTrustHtml('I accept the <a href="/terms" target="_blank">terms and conditions</a>');
     this.form = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       subject: ['', Validators.required],
       message: ['', Validators.required],
+      terms: [false, Validators.requiredTrue],
     },
       { updateOn: 'change' })
   }
+
 
   get name() {
     return this.form.get('name');
@@ -36,6 +41,12 @@ export class ContactComponent {
   get message() {
     return this.form.get('message');
   }
+
+  get terms() {
+  return this.form.get('terms');
+}
+
+
 
   async onSubmit() {
     try {

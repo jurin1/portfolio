@@ -1,6 +1,6 @@
-.toggler-menu {
+.toggle-menu {
     background-color: transparent;
-    color: var(--px-white);
+    color: var(--varCss-white);
     border: 1px solid rgba(255,255,255,.2) !important;
     border-radius: 5px;
     padding: 0 25px;
@@ -33,7 +33,7 @@
     display: none;
     z-index: 9;
     i{
-        color: var(--px-theme);
+        color: var(--varCss-theme);
         font-size: 40px;
     }
 }
@@ -55,7 +55,7 @@
 	transition: ease all 0.35s;
 	background-color: transparent;
 	.fixed-header & {
-		background-color: var(--px-black);
+		background-color: var(--varCss-black);
 		box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
 	}
 	> .container {
@@ -76,12 +76,16 @@
 			top: 100%;
 			left: 0;
 			right: 0;
-			background-color: var(--px-black);
+			background-color: var(--varCss-black);
 			border-top: 1px solid rgba(255,255,255,.2);
 			flex-direction: column;
 			padding: 10px 20px;
 			display: none;
 			box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
+			min-height: 100vh;
+			align-items: center !important;
+			justify-content: flex-start;
+			gap: 35px;
 		}
 		> li {
 			padding: 0 20px;
@@ -91,7 +95,7 @@
 			a {
 				padding: 8px 0;
 				text-transform: uppercase;
-				color: var(--px-white);
+				color: var(--varCss-white);
 				font-size: 14px;
 				letter-spacing: 1px;
 				font-weight: 500;

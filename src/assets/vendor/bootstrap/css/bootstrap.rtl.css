@@ -8012,32 +8012,32 @@ textarea.form-control-lg {
   padding: 3rem !important;
 }
 
-.px-0 {
+.varCss-0 {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-.px-1 {
+.varCss-1 {
   padding-left: 0.25rem !important;
   padding-right: 0.25rem !important;
 }
 
-.px-2 {
+.varCss-2 {
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
 }
 
-.px-3 {
+.varCss-3 {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
 
-.px-4 {
+.varCss-4 {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
 }
 
-.px-5 {
+.varCss-5 {
   padding-left: 3rem !important;
   padding-right: 3rem !important;
 }
@@ -9276,27 +9276,27 @@ textarea.form-control-lg {
   .p-sm-5 {
     padding: 3rem !important;
   }
-  .px-sm-0 {
+  .varCss-sm-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .px-sm-1 {
+  .varCss-sm-1 {
     padding-left: 0.25rem !important;
     padding-right: 0.25rem !important;
   }
-  .px-sm-2 {
+  .varCss-sm-2 {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
   }
-  .px-sm-3 {
+  .varCss-sm-3 {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
-  .px-sm-4 {
+  .varCss-sm-4 {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
-  .px-sm-5 {
+  .varCss-sm-5 {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
@@ -9834,27 +9834,27 @@ textarea.form-control-lg {
   .p-md-5 {
     padding: 3rem !important;
   }
-  .px-md-0 {
+  .varCss-md-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .px-md-1 {
+  .varCss-md-1 {
     padding-left: 0.25rem !important;
     padding-right: 0.25rem !important;
   }
-  .px-md-2 {
+  .varCss-md-2 {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
   }
-  .px-md-3 {
+  .varCss-md-3 {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
-  .px-md-4 {
+  .varCss-md-4 {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
-  .px-md-5 {
+  .varCss-md-5 {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
@@ -10392,27 +10392,27 @@ textarea.form-control-lg {
   .p-lg-5 {
     padding: 3rem !important;
   }
-  .px-lg-0 {
+  .varCss-lg-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .px-lg-1 {
+  .varCss-lg-1 {
     padding-left: 0.25rem !important;
     padding-right: 0.25rem !important;
   }
-  .px-lg-2 {
+  .varCss-lg-2 {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
   }
-  .px-lg-3 {
+  .varCss-lg-3 {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
-  .px-lg-4 {
+  .varCss-lg-4 {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
-  .px-lg-5 {
+  .varCss-lg-5 {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
@@ -10950,27 +10950,27 @@ textarea.form-control-lg {
   .p-xl-5 {
     padding: 3rem !important;
   }
-  .px-xl-0 {
+  .varCss-xl-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .px-xl-1 {
+  .varCss-xl-1 {
     padding-left: 0.25rem !important;
     padding-right: 0.25rem !important;
   }
-  .px-xl-2 {
+  .varCss-xl-2 {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
   }
-  .px-xl-3 {
+  .varCss-xl-3 {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
-  .px-xl-4 {
+  .varCss-xl-4 {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
-  .px-xl-5 {
+  .varCss-xl-5 {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
@@ -11508,27 +11508,27 @@ textarea.form-control-lg {
   .p-xxl-5 {
     padding: 3rem !important;
   }
-  .px-xxl-0 {
+  .varCss-xxl-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .px-xxl-1 {
+  .varCss-xxl-1 {
     padding-left: 0.25rem !important;
     padding-right: 0.25rem !important;
   }
-  .px-xxl-2 {
+  .varCss-xxl-2 {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
   }
-  .px-xxl-3 {
+  .varCss-xxl-3 {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
-  .px-xxl-4 {
+  .varCss-xxl-4 {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
-  .px-xxl-5 {
+  .varCss-xxl-5 {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }

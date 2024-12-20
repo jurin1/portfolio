@@ -2,6 +2,7 @@
   "HEADER": {
     "LOGO_ALT": "Logo",
     "MENU": {
+      "HOME": "Start",
       "ABOUT_ME": "Über mich",
       "SKILLS": "Fähigkeiten",
       "PORTFOLIO": "Portfolio",
@@ -22,7 +23,7 @@
   },
 
   "SKILLS": {
-    "TITLE": "Meine skills",
+    "TITLE": "Meine Skills",
     "DESCRIPTION": "Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
     "SKILL_LIST": {
       "ANGULAR": "Angular",
@@ -45,24 +46,27 @@
   },
   "PORTFOLIO": {
     "TITLE": "Portfolio",
-    "DESCRIPTION": "Entdecken Sie hier eine Auswahl meiner Arbeiten – Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
+    "DESCRIPTION_JOIN": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "DESCRIPTION_POCO": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Flaschen zu finden, um gegen das Killerhuhn zu kämpfen."
   },
 
-  "HERO_SECTION": {
+  "HOME_SECTION": {
     "UNDER_CONSTRUCTION": "Im Aufbau",
     "INTRO": {
-      "IAM": "Ich bin",
+      "IAM": "Hi! Ich bin",
+      "IAM_A": "Ich bin ein",
       "NAME": "Juri Neiz",
-      "ROLE": "FRONTEND ENTWICKLER"
+      "ROLE": "FRONTEND ENTWICKLER",
+      "CONTACT": "Kontakt"
     },
-    "CTA_BUTTON": "Lass uns sprechen!",
+    "CTA_BUTTON": "Kontakt",
     "SOCIAL_LINKS": {
       "GITHUB_ALT": "GitHub-Profil",
       "EMAIL_ALT": "E-Mail senden",
       "LINKEDIN_ALT": "LinkedIn-Profil"
     },
     "EMAIL": "juri@neizcon.de"
-},
+  },
 
   "CONTACT": {
     "TITLE": "Kontakt",
@@ -73,15 +77,19 @@
     },
     "FORM": {
       "PLACEHOLDER": {
-        "NAME": "Ihr Name",
-        "EMAIL": "Ihre E-Mail",
-        "MESSAGE": "Ihre Nachricht"
+        "NAME": "Name *",
+        "EMAIL": "E-Mail *",
+        "MESSAGE": "Ihre Nachricht *",
+        "SUBJECT": "Betreff *"
       },
       "ERRORS": {
         "NAME_REQUIRED": "Ihr Name ist erforderlich",
         "EMAIL_REQUIRED": "Ihre E-Mail ist erforderlich",
         "MESSAGE_REQUIRED": "Ihre Nachricht ist leer",
-        "POLICY_REQUIRED": "Bitte akzeptieren Sie die Datenschutzerklärung."
+        "POLICY_REQUIRED": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+        "EMAIL_INVALID": "Ungültiges E-Mail-Format.",
+        "SUBJECT_REQUIRED": "Bitte gib ein Betreff ein.",
+        "CHECKBOX": "Du musst die Datenschutzerklärung akzeptieren."
       },
       "CHECKBOX": "Ich habe die <a href='../privacy-policy'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
       "BUTTON": "Nachricht senden"
@@ -91,7 +99,7 @@
       "SUCCESS": "Ihre Nachricht wurde gesendet!",
       "SUCCESS_DETAIL": "Ich werde Ihnen so schnell wie möglich antworten.",
       "ERROR": "Es gab ein Problem beim Senden Ihrer Nachricht.",
-      "ERROR_DETAIL": "Bitte versuchen Sie es später erneut."
+      "ERROR_DETAIL": "Bitte versuchen Sie es später erneut oder schicken Sie eine email an "
     },
     "ARROW_UP": "Zurück nach oben"
   },

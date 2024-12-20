@@ -1,48 +1,48 @@
 // Media Responsive
 @mixin up-xsm {
-	@media(min-width: $px-media-xsm + 1 ){
+	@media(min-width: cal($varCss-media-xsm + 1 )){
 		@content;
 	}
 }
 
 @mixin down-xsm {
-	@media(max-width: $px-media-xsm){
+	@media(max-width: cal($varCss-media-xsm)){
 		@content;
 	}
 }
 
 @mixin up-sm {
-	@media(min-width: $px-media-sm + 1 ){
+	@media(min-width: cal($varCss-media-sm + 1) ){
 		@content;
 	}
 }
 
 @mixin down-sm {
-	@media(max-width: $px-media-sm){
+	@media(max-width: $varCss-media-sm){
 		@content;
 	}
 }
 
 @mixin up-md {
-	@media(min-width: $px-media-md + 1 ){
+	@media(min-width: cal($varCss-media-md + 1) ){
 		@content;
 	}
 }
 
 @mixin down-md {
-	@media(max-width: $px-media-md){
+	@media(max-width: $varCss-media-md){
 		@content;
 	}
 }
 
 @mixin up-lg {
-	@media(min-width: $px-media-lg + 1 ){
+	@media(min-width: cal($varCss-media-lg + 1) ){
 		@content;
 	}
 }
 
 @mixin down-lg {
-	@media(max-width: $px-media-lg){
+	@media(max-width: $varCss-media-lg){
 		@content;
 	}
 }

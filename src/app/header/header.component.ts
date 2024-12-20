@@ -17,7 +17,7 @@ export class HeaderComponent {
     this.translate.use(lang);
     this.currentLang = lang;
 
-    // Speichere die gewählte Sprache im localStorage
+
     localStorage.setItem('language', lang);
   }
 

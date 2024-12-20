@@ -12,7 +12,7 @@
     </div>
     <!-- / -->
     <ul class="main-menu">
-      <li>
+      <!-- <li>
         <a
           class="menu-item"
           spyOn="home"
@@ -20,9 +20,9 @@
           href="#home"
           (click)="fullPageScroll('home')"
         >
-          Home
+          {{ 'HEADER.MENU.HOME' | translate }}
         </a>
-      </li>
+      </li> -->
       <li>
         <a
           class="menu-item"
@@ -31,7 +31,7 @@
           href="#about"
           (click)="fullPageScroll('about')"
         >
-          About Me
+          {{ "HEADER.MENU.ABOUT_ME" | translate }}
         </a>
       </li>
       <li>
@@ -42,7 +42,7 @@
           href="#skills"
           (click)="fullPageScroll('project')"
         >
-          Skills
+          {{ "HEADER.MENU.SKILLS" | translate }}
         </a>
       </li>
       <li>
@@ -53,7 +53,7 @@
           href="#portfolio"
           (click)="fullPageScroll('services')"
         >
-          Portfolio
+          {{ "HEADER.MENU.PORTFOLIO" | translate }}
         </a>
       </li>
       <li>
@@ -64,18 +64,23 @@
           href="#contact"
           (click)="fullPageScroll('contact')"
         >
-          Contact
+          {{ "HEADER.MENU.CONTACT" | translate }}
         </a>
       </li>
     </ul>
     <!-- Top Menu -->
     <div class="d-flex" (clickOutside)="onClickedOutside($event)">
-      <a class="px-btn d-none d-lg-inline-flex" href="#contact"
-        >Lets' Talk</a
-      >
-          <button class="language" (click)="changeLanguage(currentLang === 'de' ? 'en' : 'de')">{{ currentLang === 'de' ? 'EN' : 'DE' }}</button>
+      <a class="varCss-btn d-none d-lg-inline-flex" href="#contact">{{
+        "HOME_SECTION.CTA_BUTTON" | translate
+      }}</a>
       <button
-        class="toggler-menu d-lg-none"
+        class="language"
+        (click)="changeLanguage(currentLang === 'de' ? 'en' : 'de')"
+      >
+        {{ currentLang === "de" ? "EN" : "DE" }}
+      </button>
+      <button
+        class="toggle-menu d-lg-none"
         [ngClass]="{ open: sidebarOpen }"
         (click)="toggleMenu()"
       >

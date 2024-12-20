@@ -1,12 +1,12 @@
-.px-btn {
+.varCss-btn {
 	padding: 13px 30px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 40px;;
-	// border: 2px solid var(--px-theme);
+	// border: 2px solid var(--varCss-theme);
 	background-color: #70e61c;
-	color: var(--px-white);
+	color: var(--varCss-white);
 	text-decoration: none;
 	transition: ease all 0.35s;
 	font-weight: 500;
@@ -18,35 +18,35 @@
 	}
 	&:hover {
 		background-color: #9747ff;
-		color: var(--px-white);
-		border: 2px solid var(--px-white);
+		color: var(--varCss-white);
+		border: 2px solid var(--varCss-white);
 	}
 	&.dark {
-		background: var(--px-black);
-		border: 1px solid var(--px-black);
-		color: var(--px-white);
+		background: var(--varCss-black);
+		border: 1px solid var(--varCss-black);
+		color: var(--varCss-white);
 		&:hover {
-			background: var(--px-white);
-			color: var(--px-black);
+			background: var(--varCss-white);
+			color: var(--varCss-black);
 		}
 	}
 	&.light {
 		background: rgba(255, 255, 255, 0.05);
 		border: 1px solid rgba(255, 255, 255, 0.15);
-		color: var(--px-white);
+		color: var(--varCss-white);
 		&:hover {
-			background: var(--px-white);
-			color: var(--px-black);
+			background: var(--varCss-white);
+			color: var(--varCss-black);
 		}
 	}
 	&.white {
-		background: var(--px-white);
-		border: 1px solid var(--px-white);
-		color: var(--px-black);
+		background: var(--varCss-white);
+		border: 1px solid var(--varCss-white);
+		color: var(--varCss-black);
 		&:hover {
 			background: rgba(255, 255, 255, 0.1);
 			border: 1px solid rgba(255, 255, 255, 0.15);
-			color: var(--px-white);
+			color: var(--varCss-white);
 		}
 	}
 }
@@ -82,8 +82,8 @@ button[type="submit"]:not(:disabled):hover {
 		align-items: center;
 		justify-content: center;
 		border-radius: 50%;
-		color: var(--px-white);
-		border: 2px solid var(--px-white);
+		color: var(--varCss-white);
+		border: 2px solid var(--varCss-white);
 		margin-right: 8px;
 		position: relative;
 		transition: ease top 0.35s;
@@ -108,3 +108,6 @@ button[type="submit"]:not(:disabled):hover {
 						min-width: 33px;
 			}
 }
+
+
+

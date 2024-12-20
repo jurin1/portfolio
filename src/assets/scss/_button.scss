@@ -94,3 +94,17 @@ button[type="submit"]:not(:disabled):hover {
 
 	}
 }
+
+.language{
+	background-color: transparent;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	color: #fff;
+	min-height: 50px;
+	min-width: 50px;
+	margin-left: 5px;
+		@include down-md {
+					min-height:30px;
+						min-width: 33px;
+			}
+}

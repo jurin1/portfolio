@@ -1,7 +1,8 @@
-import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { fromEvent, Subscription } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
-
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 import { throttleTime} from 'rxjs/operators';
 import { ScrollSpyService } from 'ng-spy';
 @Component({
@@ -12,7 +13,8 @@ import { ScrollSpyService } from 'ng-spy';
 export class AppComponent implements OnInit, AfterViewInit{
   public fixedHeader: boolean = false;
   private windowScroll$: Subscription = Subscription.EMPTY;
-  constructor(private spyService: ScrollSpyService, private translate: TranslateService ) { }
+  currentLang: string = 'en';
+  constructor(private spyService: ScrollSpyService, private translate: TranslateService, private router: Router ) { }
   
   
   
@@ -21,8 +23,37 @@ export class AppComponent implements OnInit, AfterViewInit{
       .pipe(throttleTime(30))
       .subscribe(() => this.onScroll());
     
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
+        this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      window.scrollTo(0, 0); 
+    });
+    
+    const storedLang = localStorage.getItem('language');
+    
+    if (storedLang) {
+      this.translate.use(storedLang);
+      this.currentLang = storedLang;
+    } else {
+      const browserLang = navigator.language.split('-')[0]; 
+      if (browserLang && ['de', 'en'].includes(browserLang)) {
+        this.translate.use(browserLang);
+        this.currentLang = browserLang;
+      } else {
+        this.translate.use('de');
+        this.currentLang = 'de';
+      }
+    }
+
+  }
+
+
+  changeLanguage(lang: string) {
+    this.translate.use(lang);
+    this.currentLang = lang;
+
+
+    localStorage.setItem('language', lang);
   }
 
   ngAfterViewInit() {
@@ -40,9 +71,5 @@ export class AppComponent implements OnInit, AfterViewInit{
     } else {
       this.fixedHeader = false;
     }
-  }
-
-    changeLanguage(lang: string) {
-    this.translate.use(lang);
   }
 }

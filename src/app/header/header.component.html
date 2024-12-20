@@ -73,8 +73,7 @@
       <a class="px-btn d-none d-lg-inline-flex" href="#contact"
         >Lets' Talk</a
       >
-          <button (click)="changeLanguage('en')">English</button>
-    <button (click)="changeLanguage('de')">Deutsch</button>
+          <button class="language" (click)="changeLanguage(currentLang === 'de' ? 'en' : 'de')">{{ currentLang === 'de' ? 'EN' : 'DE' }}</button>
       <button
         class="toggler-menu d-lg-none"
         [ngClass]="{ open: sidebarOpen }"
@@ -83,7 +82,6 @@
         <span></span>
       </button>
     </div>
-    <!-- / -->
   </div>
 </div>
 

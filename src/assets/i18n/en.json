@@ -1,0 +1,219 @@
+{
+  "HEADER": {
+    "LOGO_ALT": "Logo",
+    "MENU": {
+      "ABOUT_ME": "About Me",
+      "SKILLS": "Skills",
+      "PORTFOLIO": "Portfolio",
+      "CONTACT": "Contact"
+    }
+  },
+
+  "FOOTER": {
+    "LOGO_ALT": "Logo",
+    "IMPRINT": "Imprint",
+    "PRIVACY_POLICY": "Privacy Policy",
+    "COPYRIGHT": "© Juri Neiz 2024",
+    "SOCIAL": {
+      "GITHUB_ALT": "GitHub Profile",
+      "EMAIL_ALT": "Send Email",
+      "LINKEDIN_ALT": "LinkedIn Profile"
+    }
+  },
+
+  "SKILLS": {
+    "TITLE": "My skills",
+    "DESCRIPTION": "I have gained experience in building projects with different frontend technologies and concepts.",
+    "SKILL_LIST": {
+      "ANGULAR": "Angular",
+      "TYPESCRIPT": "TypeScript",
+      "JAVASCRIPT": "JavaScript",
+      "HTML": "HTML",
+      "FIREBASE": "Firebase",
+      "GIT": "GIT",
+      "CSS": "CSS",
+      "REST_API": "Rest-Api",
+      "SCRUM": "Scrum",
+      "MATERIAL_DESIGN": "Material design",
+      "LEARNING": "Continually learning"
+    },
+    "CONTACT_PROMPT": {
+      "TITLE": "Looking for another skill?",
+      "DESCRIPTION": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+      "BUTTON": "Get in touch"
+    }
+  },
+
+  "PORTFOLIO": {
+    "TITLE": "Portfolio",
+    "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
+  },
+
+  "HERO_SECTION": {
+    "UNDER_CONSTRUCTION": "Under Construction",
+    "INTRO": {
+      "IAM": "I am",
+      "NAME": "Juri Neiz",
+      "ROLE": "FRONTEND DEVELOPER"
+    },
+    "CTA_BUTTON": "Let's Talk!",
+    "SOCIAL_LINKS": {
+      "GITHUB_ALT": "GitHub Profile",
+      "EMAIL_ALT": "Send Email",
+      "LINKEDIN_ALT": "LinkedIn Profile"
+    },
+    "EMAIL": "juri@neizcon.de"
+  },
+
+  "CONTACT": {
+    "TITLE": "Contact",
+    "HEADER": "Got a problem to solve?",
+    "DESCRIPTION": {
+      "PART_1": "Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.",
+      "PART_2": "Need a Frontend developer? Contact me!"
+    },
+    "FORM": {
+      "PLACEHOLDER": {
+        "NAME": "Your name",
+        "EMAIL": "Your email",
+        "MESSAGE": "Your message"
+      },
+      "ERRORS": {
+        "NAME_REQUIRED": "Your name is required",
+        "EMAIL_REQUIRED": "Your email is required",
+        "MESSAGE_REQUIRED": "Your message is empty",
+        "POLICY_REQUIRED": "Please accept the privacy policy."
+      },
+      "CHECKBOX": "I've read the <a href='../privacy-policy'>Privacy policy</a> and agree to the processing of my data as outlined.",
+      "BUTTON": "Send message"
+    },
+    "FEEDBACK": {
+      "SENDING": "Your message is being sent...",
+      "SUCCESS": "Your message has been sent!",
+      "SUCCESS_DETAIL": "I will answer you as soon as possible.",
+      "ERROR": "There was a problem sending your message.",
+      "ERROR_DETAIL": "Please try again later."
+    },
+    "ARROW_UP": "Back to top"
+  },
+
+  "ABOUT_ME": {
+    "TITLE": "About me",
+    "INTRO": "Hi, I am a Front End Developer based in Gronau, Germany. I have experience in building webapps with JavaScript and Angular. I would like to further develop my skills and am looking forward to a professional career as a developer. I have responsive web apps, business apps, and a game in my portfolio. Feel free to try them out.",
+    "SECTIONS": {
+      "FIRST": {
+        "ICON_ALT": "Lightbulb icon",
+        "TEXT": "Even as a child I found IT and programming very interesting and bought my first HTML book at the age of 13. Unfortunately, I didn't find an apprenticeship in IT after school and then moved into other industries. Now I have decided to become a programmer to turn my love of technology, IT, and software into a career."
+      },
+      "SECOND": {
+        "ICON_ALT": "Puzzle icon",
+        "TEXT": "Due to my love of IT and programming, I feel at home in the industry. My passion for innovative technologies and my willingness to continuously learn make me a dedicated team member who always strives to find elegant solutions to complex challenges. My understanding of abstract relationships and how computers work makes me the perfect employee."
+      }
+    }
+  },
+  
+  "IMPRINT": {
+    "TITLE": "Imprint",
+    "ADDRESS": {
+      "NAME": "Juri Neiz",
+      "STREET": "Starenstr. 4",
+      "CITY": "48599 Gronau"
+    },
+    "CONTACT": {
+      "TITLE": "Contact",
+      "EMAIL": "E-Mail",
+      "PHONE": "Phone"
+    },
+    "SOURCE": "Source: e-recht24.de"
+  },
+
+  "PRIVACY_POLICY": {
+    "TITLE": "Privacy Policy",
+    "SECTIONS": {
+        "1": {
+            "TITLE": "1. Data Protection Overview",
+            "SUBSECTIONS": {
+                "1": {
+                    "TITLE": "General Information",
+                    "CONTENT": "The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is all data that can personally identify you. Detailed information on data protection can be found in our privacy policy listed below this text."
+                },
+                "2": {
+                    "TITLE": "Data Collection on This Website",
+                    "QUESTIONS": {
+                        "1": {
+                            "QUESTION": "Who is responsible for data collection on this website?",
+                            "ANSWER": "Data processing on this website is carried out by the website operator. You can find the operator’s contact details in the “Notice on the Responsible Party” section of this privacy policy."
+                        },
+                        "2": {
+                            "QUESTION": "How do we collect your data?",
+                            "ANSWER": "Your data is collected when you provide it to us, for example, by filling out a contact form. Other data is automatically collected by our IT systems when you visit the website. This includes technical data (e.g., internet browser, operating system, or time of page access). This data is collected automatically as soon as you enter the website."
+                        },
+                        "3": {
+                            "QUESTION": "What do we use your data for?",
+                            "ANSWER": "Part of the data is collected to ensure the error-free provision of the website. Other data may be used to analyze your user behavior."
+                        },
+                        "4": {
+                            "QUESTION": "What rights do you have regarding your data?",
+                            "ANSWER": "You have the right to receive information free of charge at any time about the origin, recipient, and purpose of your stored personal data. You also have the right to request the correction or deletion of this data. If you have given consent for data processing, you can revoke this consent at any time for the future. Additionally, you have the right to request the restriction of the processing of your personal data under certain circumstances. Furthermore, you have the right to file a complaint with the relevant supervisory authority."
+                        }
+                    }
+                }
+            }
+        },
+        "2": {
+            "TITLE": "2. Hosting",
+            "CONTENT": "We host the content of our website with the following provider:",
+            "SUBSECTIONS": {
+                "1": {
+                    "TITLE": "External Hosting",
+                    "CONTENT": "This website is externally hosted. The personal data collected on this website is stored on the host’s servers. This can include IP addresses, contact inquiries, metadata, communication data, contract data, contact details, names, website accesses, and other data generated through a website. External hosting is carried out for the purpose of fulfilling contracts with our potential and existing customers (Art. 6 para. 1 lit. b GDPR) and in the interest of the secure, fast, and efficient provision of our online offer by a professional provider (Art. 6 para. 1 lit. f GDPR)."
+                },
+                "2": {
+                    "TITLE": "Data Processing Agreement",
+                    "CONTENT": "We have entered into a data processing agreement (DPA) to use the above service. This is a data protection legally required agreement that ensures the provider processes personal data of our website visitors only according to our instructions and in compliance with the GDPR."
+                }
+            }
+        },
+        "3": {
+            "TITLE": "3. General Notes and Mandatory Information",
+            "SUBSECTIONS": {
+                "1": {
+                    "TITLE": "Data Protection",
+                    "CONTENT": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy."
+                },
+                "2": {
+                    "TITLE": "Notice on the Responsible Party",
+                    "CONTENT": "The responsible party for data processing on this website is: Juri Neiz, Starenstr. 4, 48599 Gronau, Phone: +4925621889158, Email: juri@neizcon.de."
+                },
+                "3": {
+                    "TITLE": "Retention Period",
+                    "CONTENT": "Unless a specific retention period is mentioned within this privacy policy, your personal data will remain with us until the purpose for data processing ceases to exist."
+                },
+                "4": {
+                    "TITLE": "Revocation of Your Consent to Data Processing",
+                    "CONTENT": "Many data processing operations are only possible with your explicit consent. You can revoke a previously given consent at any time. The legality of the data processing carried out until the revocation remains unaffected by the revocation."
+                },
+                "5": {
+                    "TITLE": "Right to Object to Data Collection",
+                    "CONTENT": "If data processing is based on Art. 6 para. 1 lit. e or f GDPR, you have the right to object to the processing of your personal data at any time for reasons arising from your particular situation."
+                }
+            }
+        },
+        "4": {
+            "TITLE": "4. Data Collection on This Website",
+            "SUBSECTIONS": {
+                "1": {
+                    "TITLE": "Contact Form",
+                    "CONTENT": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and for follow-up questions."
+                },
+                "2": {
+                    "TITLE": "Inquiry by Email, Phone, or Fax",
+                    "CONTENT": "If you contact us by email, phone, or fax, your inquiry, including all resulting personal data (name, inquiry), will be stored and processed by us for the purpose of handling your request."
+                }
+            }
+        }
+    }
+}
+
+}
+

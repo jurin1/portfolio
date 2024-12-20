@@ -1,0 +1,166 @@
+<div class="container">
+  <div class="contactus-box rounded oveflow-hidden gray-bg">
+    <div class="row g-0 p-4 p-lg-5">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-8">
+        <div class="contactus-title">
+          <h5>Got a problem to solve</h5>
+          <p class="m-0">
+            Contact me through this form, I am interested in hearing you,
+            knowing your ideas and contributing to your projects with my work.
+            Need a Frontend developer? Contact me!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-0 contactus-form p-4 p-lg-5 flex-row-reverse">
+      <div class="col-lg-8">
+        <div class="contact-form">
+          <form (ngSubmit)="onSubmit()" [formGroup]="form" id="contact-form">
+            <div class="row gx-3 gy-4">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-label">First name</label>
+                  <input
+                    name="Name"
+                    id="name"
+                    placeholder="Name *"
+                    class="form-control"
+                    type="text"
+                    formControlName="name"
+                  />
+                  <div
+                    *ngIf="name?.invalid && (name?.touched || name?.dirty)"
+                    class="error"
+                  >
+                    <div *ngIf="name?.errors?.['required']">
+                      Name ist erforderlich.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-label">Your Email</label>
+                  <input
+                    name="Email"
+                    id="email"
+                    placeholder="Email *"
+                    class="form-control"
+                    type="email"
+                    formControlName="email"
+                  />
+                  <div
+                    *ngIf="email?.invalid && (email?.touched || email?.dirty)"
+                    class="error"
+                  >
+                    <div *ngIf="email?.errors?.['required']">
+                      E-Mail ist erforderlich.
+                    </div>
+                    <div *ngIf="email?.errors?.['email']">
+                      Ungültiges E-Mail-Format.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label class="form-label">Subject</label>
+                  <input
+                    name="Subject"
+                    id="subject"
+                    placeholder="Subject *"
+                    class="form-control"
+                    type="text"
+                    formControlName="subject"
+                  />
+                  <div
+                    *ngIf="
+                      subject?.invalid && (subject?.touched || subject?.dirty)
+                    "
+                    class="error"
+                  >
+                    <div *ngIf="subject?.errors?.['required']">
+                      Betreff ist erforderlich.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="form-label">Your message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Your message *"
+                    rows="4"
+                    class="form-control"
+                    formControlName="message"
+                  ></textarea>
+                  <div
+                    *ngIf="
+                      message?.invalid && (message?.touched || message?.dirty)
+                    "
+                    class="error"
+                  >
+                    <div *ngIf="message?.errors?.['required']">
+                      Nachricht ist erforderlich.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="send">
+                  <button
+                    [class.disabled]="!form.valid"
+                    [class.enabled]="form.valid"
+                    class="px-btn w-40"
+                    type="submit"
+                    [disabled]="!form.valid"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              *ngIf="showPopup"
+              id="popup"
+              style="display: block"
+            >
+              <div>
+                <div>
+                  <h5>
+                    <span *ngIf="popupType == 'success'" style="color: #6fe71c;"
+                      >Thank you for your message</span
+                    >
+                    <span *ngIf="popupType == 'error'" style="color: red;"
+                      >Error while submitting!</span
+                    >
+                  </h5>
+                </div>
+                <div>
+                  <span *ngIf="popupType == 'success'" 
+                    >I will get back to you as soon as possible</span
+                  >
+                  <span *ngIf="popupType == 'error'"
+                    >There was an error sending the message, please send me your message to juri&#64;neizcon.de</span
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4 pe-md-5">
+        <div class="contact-banner d-none d-lg-block img-circle">
+          <img
+            src="assets/img/personal/bild_schwarz_weiß.png"
+            title=""
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,215 @@
+{
+  "HEADER": {
+    "LOGO_ALT": "Logo",
+    "MENU": {
+      "ABOUT_ME": "Über mich",
+      "SKILLS": "Fähigkeiten",
+      "PORTFOLIO": "Portfolio",
+      "CONTACT": "Kontakt"
+    }
+  },
+
+  "FOOTER": {
+    "LOGO_ALT": "Logo",
+    "IMPRINT": "Impressum",
+    "PRIVACY_POLICY": "Datenschutzerklärung",
+    "COPYRIGHT": "© Juri Neiz 2024",
+    "SOCIAL": {
+      "GITHUB_ALT": "GitHub-Profil",
+      "EMAIL_ALT": "E-Mail senden",
+      "LINKEDIN_ALT": "LinkedIn-Profil"
+    }
+  },
+
+  "SKILLS": {
+    "TITLE": "Meine skills",
+    "DESCRIPTION": "Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+    "SKILL_LIST": {
+      "ANGULAR": "Angular",
+      "TYPESCRIPT": "TypeScript",
+      "JAVASCRIPT": "JavaScript",
+      "HTML": "HTML",
+      "FIREBASE": "Firebase",
+      "GIT": "GIT",
+      "CSS": "CSS",
+      "REST_API": "Rest-Api",
+      "SCRUM": "Scrum",
+      "MATERIAL_DESIGN": "Materialdesign",
+      "LEARNING": "Ständiges Lernen"
+    },
+    "CONTACT_PROMPT": {
+      "TITLE": "Suchen Sie was anderes?",
+      "DESCRIPTION": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein Wissen zu erweitern.",
+      "BUTTON": "Kontakt"
+    }
+  },
+  "PORTFOLIO": {
+    "TITLE": "Portfolio",
+    "DESCRIPTION": "Entdecken Sie hier eine Auswahl meiner Arbeiten – Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
+  },
+
+  "HERO_SECTION": {
+    "UNDER_CONSTRUCTION": "Im Aufbau",
+    "INTRO": {
+      "IAM": "Ich bin",
+      "NAME": "Juri Neiz",
+      "ROLE": "FRONTEND ENTWICKLER"
+    },
+    "CTA_BUTTON": "Lass uns sprechen!",
+    "SOCIAL_LINKS": {
+      "GITHUB_ALT": "GitHub-Profil",
+      "EMAIL_ALT": "E-Mail senden",
+      "LINKEDIN_ALT": "LinkedIn-Profil"
+    },
+    "EMAIL": "juri@neizcon.de"
+},
+
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "HEADER": "Haben Sie ein Problem zu lösen?",
+    "DESCRIPTION": {
+      "PART_1": "Kontaktieren Sie mich über dieses Formular, ich bin gespannt auf Ihre Ideen und möchte gerne zu Ihren Projekten beitragen.",
+      "PART_2": "Brauchen Sie einen Frontend-Entwickler? Kontaktieren Sie mich!"
+    },
+    "FORM": {
+      "PLACEHOLDER": {
+        "NAME": "Ihr Name",
+        "EMAIL": "Ihre E-Mail",
+        "MESSAGE": "Ihre Nachricht"
+      },
+      "ERRORS": {
+        "NAME_REQUIRED": "Ihr Name ist erforderlich",
+        "EMAIL_REQUIRED": "Ihre E-Mail ist erforderlich",
+        "MESSAGE_REQUIRED": "Ihre Nachricht ist leer",
+        "POLICY_REQUIRED": "Bitte akzeptieren Sie die Datenschutzerklärung."
+      },
+      "CHECKBOX": "Ich habe die <a href='../privacy-policy'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
+      "BUTTON": "Nachricht senden"
+    },
+    "FEEDBACK": {
+      "SENDING": "Ihre Nachricht wird gesendet...",
+      "SUCCESS": "Ihre Nachricht wurde gesendet!",
+      "SUCCESS_DETAIL": "Ich werde Ihnen so schnell wie möglich antworten.",
+      "ERROR": "Es gab ein Problem beim Senden Ihrer Nachricht.",
+      "ERROR_DETAIL": "Bitte versuchen Sie es später erneut."
+    },
+    "ARROW_UP": "Zurück nach oben"
+  },
+
+  "ABOUT_ME": {
+    "TITLE": "Über mich",
+    "INTRO": "Hallo, ich bin ein Frontend-Entwickler aus Gronau, Deutschland. Ich habe Erfahrung im Aufbau von Webanwendungen mit JavaScript und Angular. Ich möchte meine Fähigkeiten weiterentwickeln und freue mich auf eine professionelle Karriere als Entwickler. In meinem Portfolio befinden sich responsive Web-Apps, Business-Apps und ein Spiel. Probieren Sie sie gerne aus.",
+    "SECTIONS": {
+      "FIRST": {
+        "ICON_ALT": "Glühbirnen-Symbol",
+        "TEXT": "Schon als Kind fand ich IT und Programmierung sehr interessant und kaufte mit 13 Jahren mein erstes HTML-Buch. Leider fand ich nach der Schule keine Ausbildung in der IT und wechselte in andere Branchen. Jetzt habe ich mich entschieden, Programmierer zu werden, um meine Liebe zu Technologie, IT und Software in eine Karriere zu verwandeln."
+      },
+      "SECOND": {
+        "ICON_ALT": "Puzzlesymbol",
+        "TEXT": "Durch meine Liebe zur IT und Programmierung fühle ich mich in der Branche zuhause. Meine Leidenschaft für innovative Technologien und meine Bereitschaft, kontinuierlich zu lernen, machen mich zu einem engagierten Teammitglied, das stets danach strebt, elegante Lösungen für komplexe Herausforderungen zu finden. Mein Verständnis für abstrakte Zusammenhänge und die Funktionsweise von Computern macht mich zum perfekten Mitarbeiter."
+      }
+    }
+  },
+
+  "IMPRINT": {
+    "TITLE": "Impressum",
+    "ADDRESS": {
+      "NAME": "Juri Neiz",
+      "STREET": "Starenstr. 4",
+      "CITY": "48599 Gronau"
+    },
+    "CONTACT": {
+      "TITLE": "Kontakt",
+      "EMAIL": "E-Mail",
+      "PHONE": "Telefon"
+    },
+    "SOURCE": "Quelle: e-recht24.de"
+  },
+  "PRIVACY_POLICY": {
+    "TITLE": "Datenschutzerklärung",
+    "SECTIONS": {
+      "1": {
+        "TITLE": "1. Datenschutz auf einen Blick",
+        "SUBSECTIONS": {
+          "1": {
+            "TITLE": "Allgemeine Hinweise",
+            "CONTENT": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung."
+          },
+          "2": {
+            "TITLE": "Datenerfassung auf dieser Website",
+            "QUESTIONS": {
+              "1": {
+                "QUESTION": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
+                "ANSWER": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen."
+              },
+              "2": {
+                "QUESTION": "Wie erfassen wir Ihre Daten?",
+                "ANSWER": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten."
+              },
+              "3": {
+                "QUESTION": "Wofür nutzen wir Ihre Daten?",
+                "ANSWER": "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden."
+              },
+              "4": {
+                "QUESTION": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+                "ANSWER": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu."
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "TITLE": "2. Hosting",
+        "CONTENT": "Wir hosten die Inhalte unserer Website bei folgendem Anbieter:",
+        "SUBSECTIONS": {
+          "1": {
+            "TITLE": "Externes Hosting",
+            "CONTENT": "Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln. Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO)."
+          },
+          "2": {
+            "TITLE": "Auftragsverarbeitung",
+            "CONTENT": "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet."
+          }
+        }
+      },
+      "3": {
+        "TITLE": "3. Allgemeine Hinweise und Pflichtinformationen",
+        "SUBSECTIONS": {
+          "1": {
+            "TITLE": "Datenschutz",
+            "CONTENT": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung."
+          },
+          "2": {
+            "TITLE": "Hinweis zur verantwortlichen Stelle",
+            "CONTENT": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: Juri Neiz, Starenstr. 4, 48599 Gronau, Telefon: +4925621889158, E-Mail: juri@neizcon.de."
+          },
+          "3": {
+            "TITLE": "Speicherdauer",
+            "CONTENT": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt."
+          },
+          "4": {
+            "TITLE": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+            "CONTENT": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt."
+          },
+          "5": {
+            "TITLE": "Widerspruchsrecht gegen die Datenerhebung",
+            "CONTENT": "Wenn die Datenverarbeitung auf Grundlage von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, haben Sie jederzeit das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, gegen die Verarbeitung Ihrer personenbezogenen Daten Widerspruch einzulegen."
+          }
+        }
+      },
+      "4": {
+        "TITLE": "4. Datenerfassung auf dieser Website",
+        "SUBSECTIONS": {
+          "1": {
+            "TITLE": "Kontaktformular",
+            "CONTENT": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert."
+          },
+          "2": {
+            "TITLE": "Anfrage per E-Mail, Telefon oder Telefax",
+            "CONTENT": "Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet."
+          }
+        }
+      }
+    }
+  }
+}
